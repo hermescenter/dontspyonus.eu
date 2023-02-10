@@ -1,0 +1,5 @@
+site/resources
+site/public
+site/*.lock
+
+node_modules
