@@ -31,6 +31,6 @@ description: "L'EUROPA DEI DIRITTI NON ABBRACCIA LA TECNOCRAZIA DELLA SORVEGLIAN
 
 <div id="facelist-6" class="container img__limit"></div>
 
-<div id="facelist-7" class="container img__limit"></div>
-
 # Anche altre cose sono problematiche nell'AIAct, ad esempio il concetto di "Sandboxes"; [Perchè e come le "sandbox" sono una pessima idea](/on-sandboxes).
+
+<div id="facelist-7" class="container img__limit"></div>
