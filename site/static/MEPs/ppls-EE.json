@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Andrus ANSIP",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124696.jpg",
+    "group": "Renew Europe Group",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Eesti Reformierakond"
+  },
+  {
+    "name": "Marina KALJURAND",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197491.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Sotsiaaldemokraatlik Erakond"
+  },
+  {
+    "name": "Jaak MADISON",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197493.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Eesti Konservatiivne Rahvaerakond"
+  },
+  {
+    "name": "Sven MIKSER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197497.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Sotsiaaldemokraatlik Erakond"
+  },
+  {
+    "name": "Urmas PAET",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/129073.jpg",
+    "group": "Renew Europe Group",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Eesti Reformierakond"
+  },
+  {
+    "name": "Riho TERRAS",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204449.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Isamaa"
+  },
+  {
+    "name": "Yana TOOM",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124700.jpg",
+    "group": "Renew Europe Group",
+    "nation": "Estonia",
+    "TLC": "EE",
+    "party": "Eesti Keskerakond"
+  }
+]

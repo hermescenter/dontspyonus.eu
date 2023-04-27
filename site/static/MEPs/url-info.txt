@@ -1,0 +1,6 @@
+https://www.europarl.europa.eu/meps/en/download/advanced/xml?name=&euPoliticalGroupBodyRefNum=&countryCode=BG&bodyType=ALL
+
+
+<select id="mepSearchCountrySelectField" name="countryCode" data-min-length-for-search="10" class="es_select" tabindex="-1" aria-hidden="true" style="width: 568px; height: 35px;">
+							<option value="">All countries</option><option value="BE">Belgium</option><option value="BG" selected="selected">Bulgaria</option><option value="CZ">Czechia</option><option value="DK">Denmark</option><option value="DE">Germany</option><option value="EE">Estonia</option><option value="IE">Ireland</option><option value="GR">Greece</option><option value="ES">Spain</option><option value="FR">France</option><option value="HR">Croatia</option><option value="IT">Italy</option><option value="CY">Cyprus</option><option value="LV">Latvia</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="HU">Hungary</option><option value="MT">Malta</option><option value="NL">Netherlands</option><option value="AT">Austria</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="RO">Romania</option><option value="SI">Slovenia</option><option value="SK">Slovakia</option><option value="FI">Finland</option><option value="SE">Sweden</option>
+						</select>

@@ -1,0 +1,11 @@
+{{ $id := .Get "id" }}
+{{ $name := .Get "name" }}
+{{ $nation := .Get "nation" }}
+{{ $party := .Get "party" }}
+
+<div class="float-left">
+  <img src="/MEPs/pics/{{ $id }}.jpg" />
+  <p>{{ $name }}</p>
+  {{ $party }}
+</div>
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/_vendor/face-api.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/_vendor/styles.css">
+</head>
+<body>
+
+  <h1>test</h1>
+
+  <div id="img-1">
+    <img class="imgsrc" src="/images/meps/96750.jpg" />
+    <canvas class="overlay"></canvas>
+    <p class="comment"></p>
+  </div>
+
+  <hr />
+  <script>
+
+    function getBoxFromPoints(points) {
+      const box = {
+        bottom: -Infinity,
+        left: Infinity,
+        right: -Infinity,
+        top: Infinity,
+
+        get center() {
+          return {
+            x: this.left + this.width / 2,
+            y: this.top + this.height / 2,
+          };
+        },
+
+        get height() {
+          return this.bottom - this.top;
+        },
+
+        get width() {
+          return this.right - this.left;
+        },
+      };
+
+      for (const point of points) {
+        box.left = Math.min(box.left, point.x);
+        box.right = Math.max(box.right, point.x);
+
+        box.bottom = Math.max(box.bottom, point.y);
+        box.top = Math.min(box.top, point.y);
+      }
+
+      return box;
+    }
+
+    async function updateResults() {
+      if (!isFaceDetectionModelLoaded()) {
+        console.log("Not loaded yet...?");
+        return
+      }
+
+      const inputImgEl = $('#inputImg').get(0)
+      const options = getFaceDetectorOptions()
+
+      const results = await faceapi.detectAllFaces(inputImgEl, options)
+        // compute face landmarks to align faces for better accuracy
+        .withFaceLandmarks()
+        .withAgeAndGender()
+
+      const canvas = $('#overlay').get(0)
+      faceapi.matchDimensions(canvas, inputImgEl)
+
+      const resizedResults = faceapi.resizeResults(results, inputImgEl)
+      faceapi.draw.drawDetections(canvas, resizedResults)
+
+      resizedResults.forEach(result => {
+        const { age, gender, genderProbability } = result
+        new faceapi.draw.DrawTextField(
+          [
+            `${faceapi.utils.round(age, 0)} years`,
+            `${gender} (${faceapi.utils.round(genderProbability)})`
+          ],
+          result.detection.box.bottomLeft
+        ).draw(canvas)
+      })
+    }
+
+    async function run() {
+      // load face detection and age and gender recognition models
+      // and load face landmark model for face alignment
+      await changeFaceDetector(SSD_MOBILENETV1)
+      await faceapi.loadFaceLandmarkModel('/')
+      await faceapi.nets.ageGenderNet.load('/')
+
+      // start processing image
+      updateResults()
+    }
+
+    async function testRun(input) {
+      await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+      console.log(!!faceapi.nets.tinyFaceDetector.params); // when true is loaded
+      await faceapi.loadFaceLandmarkModel('/models')
+      await faceapi.nets.ageGenderNet.load('/models')
+
+      let inputSize = 512
+      let scoreThreshold = 0.5
+
+      /* toNetInput - expected media to be of type
+       * HTMLImageElement | HTMLVideoElement | HTMLCanvasElement | tf.Tensor3D, or to be an element id
+       */
+      /*
+      const detections = await faceapi.detectAllFaces(input, new faceapi.TinyFaceDetectorOptions(
+        { inputSize: 608, scoreThreshold }
+      ) );
+      console.log(detections);  */
+
+      const facedata = await faceapi.detectSingleFace(input, new faceapi.TinyFaceDetectorOptions({
+        inputSize, scoreThreshold
+      }));
+
+      const face = await faceapi.detectSingleFace(input, new faceapi.TinyFaceDetectorOptions({
+        inputSize, scoreThreshold
+      }))
+        .withFaceLandmarks()
+        .withAgeAndGender(); 
+
+      /*
+      const features = {
+        jaw: face.landmarks.positions.slice(0, 17),
+        eyebrowLeft: face.landmarks.positions.slice(17, 22),
+        eyebrowRight: face.landmarks.positions.slice(22, 27),
+        noseBridge: face.landmarks.positions.slice(27, 31),
+        nose: face.landmarks.positions.slice(31, 36),
+        eyeLeft: face.landmarks.positions.slice(36, 42),
+        eyeRight: face.landmarks.positions.slice(42, 48),
+        lipOuter: face.landmarks.positions.slice(48, 60),
+        lipInner: face.landmarks.positions.slice(60),
+      };
+      console.log(face, facedata);
+
+      const box = {
+        // Set boundaries to their inverse infinity, so any number is greater/smaller
+        bottom: -Infinity,
+        left: Infinity,
+        right: -Infinity,
+        top: Infinity,
+
+        // Given the boundaries, we can compute width and height
+        get height() {
+          return this.bottom - this.top;
+        },
+
+        get width() {
+          return this.right - this.left;
+        },
+      };
+
+      // Update the box boundaries
+      box.bottom = Math.max(box.bottom, facedata.box.bottom);
+      box.left = Math.min(box.left, facedata.box.left);
+      box.right = Math.max(box.right, facedata.box.right);
+      box.top = Math.min(box.top, facedata.box.top);
+
+      const overlay = document.querySelector('#img-1 > .overlay');
+      // faceapi.matchDimensions(input, overlay);
+
+      const context = overlay.getContext('2d');
+
+      overlay.height = box.height;
+      overlay.width = box.width;
+
+      context.drawImage(
+        input,
+        box.left,
+        box.top,
+        box.width,
+        box.height,
+        0,
+        0,
+        overlay.width,
+        overlay.height
+      );
+
+      for (const eye of [features.eyeLeft, features.eyeRight]) {
+        const eyeBox = getBoxFromPoints(eye);
+        const fontSize = 6 * eyeBox.height;
+
+        context.font = `${fontSize}px/${fontSize}px serif`;
+        context.textAlign = 'center';
+        context.textBaseline = 'bottom';
+
+        context.fillStyle = '#000';
+        context.fillText('👄', eyeBox.center.x, eyeBox.center.y + 0.6 * fontSize);
+      }
+
+      faceapi.draw.drawDetections(overlay, face)
+
+      const { age, gender, genderProbability } = face;
+
+      new faceapi.draw.DrawTextField(
+        [
+          `${faceapi.utils.round(age, 0)} years`,
+          `${gender} (${faceapi.utils.round(genderProbability)})`
+        ],
+        face.detection.box.bottomLeft
+      ).draw(overlay);
+      */
+
+      const { age, gender, genderProbability } = face;
+      const comment = document.querySelector("#img-1 > .comment");
+      comment.textContent = `${faceapi.utils.round(age, 0)} years; ${gender} (${faceapi.utils.round(genderProbability)}%)`;
+      // console.log(features);
+    }
+
+    $(document).ready(function() {
+      const input = document.querySelector('#img-1 > .imgsrc');
+      testRun(input);
+    });
+  </script>
+</body>
+</html>

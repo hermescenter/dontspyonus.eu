@@ -1,0 +1,634 @@
+[
+  {
+    "name": "François ALFONSI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96750.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Régions et Peuples Solidaires"
+  },
+  {
+    "name": "Eric ANDRIEU",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/113892.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Parti socialiste"
+  },
+  {
+    "name": "Mathilde ANDROUËT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197691.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Manon AUBRY",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197533.jpg",
+    "group": "The Left group in the European Parliament - GUE/NGL",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La France Insoumise"
+  },
+  {
+    "name": "Jordan BARDELLA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/131580.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Nicolas BAY",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124760.jpg",
+    "group": "Non-attached Members",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Reconquête!"
+  },
+  {
+    "name": "Aurélia BEIGNEUX",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197680.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "François-Xavier BELLAMY",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197534.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Stéphane BIJOUX",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197551.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La République en marche"
+  },
+  {
+    "name": "Dominique BILDE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124771.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Benoît BITEAU",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197512.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Gilles BOYER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197577.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Horizons"
+  },
+  {
+    "name": "Annika BRUNA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/182995.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Sylvie BRUNET",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197576.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Démocrate"
+  },
+  {
+    "name": "Pascal CANFIN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96711.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Damien CARÊME",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197574.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Catherine CHABAUD",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197505.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Démocrate"
+  },
+  {
+    "name": "Patricia CHAGNON",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/236052.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Leila CHAIBI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197529.jpg",
+    "group": "The Left group in the European Parliament - GUE/NGL",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La France Insoumise"
+  },
+  {
+    "name": "Ilana CICUREL",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204416.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Nathalie COLIN-OESTERLÉ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197536.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les centristes"
+  },
+  {
+    "name": "Gilbert COLLARD",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197683.jpg",
+    "group": "Non-attached Members",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Reconquête!"
+  },
+  {
+    "name": "David CORMAND",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197503.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Arnaud DANJEAN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96747.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Marie DAUCHY",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/236050.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Jérémy DECERLE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197504.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste L'Europe Ensemble"
+  },
+  {
+    "name": "Gwendoline DELBOS-CORFIELD",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197531.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Karima DELLI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96868.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Geoffroy DIDIER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/190774.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Pascal DURAND",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124693.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Agnès EVREN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197535.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Laurence FARRENG",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197589.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Démocrate"
+  },
+  {
+    "name": "Jean-Paul GARRAUD",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197628.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Raphaël GLUCKSMANN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197694.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Place publique"
+  },
+  {
+    "name": "Sandro GOZI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204419.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Catherine GRISET",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/94649.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Christophe GRUDLER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197557.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Démocrate"
+  },
+  {
+    "name": "Claude GRUFFAT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204420.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Bernard GUETTA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197543.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Sylvie GUILLAUME",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96952.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Parti socialiste"
+  },
+  {
+    "name": "Valérie HAYER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/135511.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Renaissance"
+  },
+  {
+    "name": "Brice HORTEFEUX",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/5565.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Yannick JADOT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96740.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Jean-François JALKH",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124770.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "France JAMET",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/189065.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Virginie JORON",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197627.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Hervé JUVIN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197626.jpg",
+    "group": "Non-attached Members",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Pierre KARLESKIND",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197585.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La République en marche"
+  },
+  {
+    "name": "Fabienne KELLER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/22858.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Agir - La Droite constructive"
+  },
+  {
+    "name": "Jean-Lin LACAPELLE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204421.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Aurore LALUCQ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197697.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Place publique"
+  },
+  {
+    "name": "Pierre LARROUTUROU",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197698.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Nouvelle Donne"
+  },
+  {
+    "name": "Gilles LEBRETON",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124738.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Nathalie LOISEAU",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197494.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Thierry MARIANI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197623.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Emmanuel MAUREL",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/24505.jpg",
+    "group": "The Left group in the European Parliament - GUE/NGL",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Gauche républicaine et socialiste"
+  },
+  {
+    "name": "Nora MEBAREK",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204418.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Parti socialiste"
+  },
+  {
+    "name": "Marina MESURE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/236053.jpg",
+    "group": "The Left group in the European Parliament - GUE/NGL",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La France Insoumise"
+  },
+  {
+    "name": "Eric MINARDI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/236051.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Nadine MORANO",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/72779.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Philippe OLIVIER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197687.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Younous OMARJEE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/30482.jpg",
+    "group": "The Left group in the European Parliament - GUE/NGL",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La France Insoumise"
+  },
+  {
+    "name": "Max ORVILLE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/234344.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Démocrate"
+  },
+  {
+    "name": "Anne-Sophie PELLETIER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197527.jpg",
+    "group": "The Left group in the European Parliament - GUE/NGL",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La France Insoumise"
+  },
+  {
+    "name": "Maxette PIRBAKAS",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197629.jpg",
+    "group": "Non-attached Members",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Indépendant"
+  },
+  {
+    "name": "Dominique RIQUET",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96885.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Radical Social-Libéral"
+  },
+  {
+    "name": "Michèle RIVASI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96743.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Jérôme RIVIÈRE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197615.jpg",
+    "group": "Non-attached Members",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Reconquête!"
+  },
+  {
+    "name": "Caroline ROOSE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197506.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "André ROUGÉ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197690.jpg",
+    "group": "Identity and Democracy Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Rassemblement national"
+  },
+  {
+    "name": "Anne SANDER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/24594.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Les Républicains"
+  },
+  {
+    "name": "Mounir SATOURI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197500.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Stéphane SÉJOURNÉ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197508.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "La République en marche"
+  },
+  {
+    "name": "Irène TOLLERET",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197547.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Marie TOUSSAINT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/97236.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Europe Écologie"
+  },
+  {
+    "name": "Véronique TRILLET-LENOIR",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197593.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  },
+  {
+    "name": "Marie-Pierre VEDRENNE",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197502.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Mouvement Démocrate"
+  },
+  {
+    "name": "Salima YENBOU",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197511.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Renaissance"
+  },
+  {
+    "name": "Stéphanie YON-COURTIN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197581.jpg",
+    "group": "Renew Europe Group",
+    "nation": "France",
+    "TLC": "FR",
+    "party": "Liste Renaissance"
+  }
+]

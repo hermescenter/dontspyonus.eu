@@ -1,20 +1,19 @@
-# baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "...and now ClaimTheirFace"
-theme = "alexa-portfolio"
-enableRobotsTXT = true
+title = "Don't Spy EU"
+logo = "/logo/6.png"
+theme = "fmeps"
 
-[params]
-	# favicon = "/images/fav.png"
-	home_title = "The European Parlament is regulating AI"
-	home_subtitle = "Among the discussed options, there is to allow in public space, face recognition products"
-	home_description = "As it is a terrible idea for everyone, we want to give to our representative sneak peak of what does it means"
-	github = "https://github.com/bonaxcrimo"
-	linkedin = "https://www.linkedin.com/in/bona-tua-1b8685130/"
-	dribbble = "https://dribbble.com/RainMustbeDark"
-	phone = "0812"
-	email = "bonaxcrimo@gmail.com"
-	location = "Jakarta, Indonesia"
+defaultContentLanguage = 'en'
+[languages]
+  [languages.it]
+    languageName = 'it'
+    title = "🇮🇹 Europa Non Spiarci!"
+    weight = 2
+  [languages.en]
+    languageName = 'en'
+    title = "Don't Spy EU!"
+    weight = 1
+
 
 [markup]
   [markup.goldmark]

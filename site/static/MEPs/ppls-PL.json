@@ -1,0 +1,418 @@
+[
+  {
+    "name": "Magdalena ADAMOWICZ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197490.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Independent"
+  },
+  {
+    "name": "Bartosz ARŁUKOWICZ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197492.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Marek Paweł BALT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197495.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Nowa Lewica"
+  },
+  {
+    "name": "Marek BELKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197496.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Nowa Lewica"
+  },
+  {
+    "name": "Robert BIEDROŃ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197498.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Nowa Lewica"
+  },
+  {
+    "name": "Adam BIELAN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/23788.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Partia Republikańska"
+  },
+  {
+    "name": "Joachim Stanisław BRUDZIŃSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197501.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Jerzy BUZEK",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/28269.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Włodzimierz CIMOSZEWICZ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197507.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Sojusz Lewicy Demokratycznej - Unia Pracy"
+  },
+  {
+    "name": "Ryszard CZARNECKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/28372.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Jarosław DUDA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197510.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Anna FOTYGA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/28353.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Tomasz FRANKOWSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197513.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Andrzej HALICKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197514.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Krzysztof HETMAN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124895.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Polskie Stronnictwo Ludowe"
+  },
+  {
+    "name": "Danuta Maria HÜBNER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96779.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Patryk JAKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197516.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Solidarna Polska Zbigniewa Ziobro"
+  },
+  {
+    "name": "Adam JARUBAS",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197517.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Polskie Stronnictwo Ludowe"
+  },
+  {
+    "name": "Krzysztof JURGIEL",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197518.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Jarosław KALINOWSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96771.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Polskie Stronnictwo Ludowe"
+  },
+  {
+    "name": "Karol KARSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124887.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Beata KEMPA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197519.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Solidarna Polska Zbigniewa Ziobro"
+  },
+  {
+    "name": "Izabela-Helena KLOC",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197520.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Łukasz KOHUT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197523.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Nowa Lewica"
+  },
+  {
+    "name": "Ewa KOPACZ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197525.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Joanna KOPCIŃSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197530.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Zdzisław KRASNODĘBSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124891.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Elżbieta KRUK",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197532.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Zbigniew KUŹMIUK",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/28389.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Ryszard Antoni LEGUTKO",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96796.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Janusz LEWANDOWSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/23781.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Bogusław LIBERADZKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/23768.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Nowa Lewica"
+  },
+  {
+    "name": "Elżbieta Katarzyna ŁUKACIJEWSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96791.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Beata MAZUREK",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197538.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Leszek MILLER",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197540.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Independent"
+  },
+  {
+    "name": "Andżelika Anna MOŻDŻANOWSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197541.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Janina OCHOJSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197542.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Independent"
+  },
+  {
+    "name": "Jan OLBRYCHT",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/28288.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Tomasz Piotr PORĘBA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96801.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Elżbieta RAFALSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197544.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Bogdan RZOŃCA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197545.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Jacek SARYUSZ-WOLSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/28297.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Radosław SIKORSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197548.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Platforma Obywatelska"
+  },
+  {
+    "name": "Sylwia SPUREK",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197550.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Independent"
+  },
+  {
+    "name": "Beata SZYDŁO",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197553.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Dominik TARCZYŃSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/204346.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Róża THUN UND HOHENSTEIN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/96776.jpg",
+    "group": "Renew Europe Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Polska 2050"
+  },
+  {
+    "name": "Grzegorz TOBISZOWSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197559.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Witold Jan WASZCZYKOWSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197566.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Jadwiga WIŚNIEWSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124877.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Anna ZALEWSKA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197572.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  },
+  {
+    "name": "Kosma ZŁOTOWSKI",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/124884.jpg",
+    "group": "European Conservatives and Reformists Group",
+    "nation": "Poland",
+    "TLC": "PL",
+    "party": "Prawo i Sprawiedliwość"
+  }
+]

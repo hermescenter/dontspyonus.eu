@@ -1,18 +1,54 @@
 ---
-title: "About Me"
-subtitle: "My Introduction"
+title: "Know more about DontSpy.EU"
 ---
 
-<div class="container grid">
-  <span class="section__title h2">
-    Hello! My name is <b class='main-color'>Bona Tua</b> from <b class='main-color'>Indonesia</b>.
-  </span>
-  <p>
-    Since the beginning of college I have been a freelance web developer, sometimes I also take mobile but the simple one due to the limitations of my device, my first mobile project used Ionic because it used to be light and supported for my old laptop.
-  </p>
-  <p>
-    After graduating from college with majoring in Mobile and Web Development,I decided to become a FullStack Mobile and Web Developer.
-  </p>
-  <p>Fast-forward to today, and I’ve had the privilege of working at 
-  	<a class='main-color' href="https://www.mikroskil.ac.id/" rel="noopener noreferrer" target="_blank">college</a>, <a href="https://www.transporindo.com/" class='main-color' rel="noopener noreferrer" target="_blank">a trasportation company</a>, and <a class='main-color' href="http://sisda.sumutprov.go.id/" rel="noopener noreferrer" target="_blank">a government office</a>. My main focus these days is lead small developer team for building mobile and website app for Music Distribution Company at <a href="http://premierpro.co.id/" rel="noopener noreferrer" target="_blank" class='main-color'>Premi Musik Era</a>.</p>
-</div>
+# This campaign is designed by the [**Hermes Center**](https://hermescenter.org), Italian NGO for transparency and digital human rights.
+
+# It is made with the help of [**The Good Lobby**](https://www.thegoodlobby.eu/) and [**Info.nodes**](https://infonodes.org/).
+
+<br />
+
+---
+
+# We partecipated to [Raclaim Your Face](https://reclaimyourface.eu/), the campaign concluded in 2022, that collected signatures to ask for a **full ban of face recognition**.
+
+<br />
+
+---
+
+# The competitions:
+
+<br />
+
+## ✨ [Open Data Faces](/list) competition n.1: Pull our data and enrich them with additional layer of face analysis. For example: compare them to a list of MugShots, or run some crazy AI system that attributes characteristic. We know it shouldn't work that way, but once it get legitimate, it is only a marketing problem to make it belivable. Be creative! we need to highlist that once face bioemtry get in the market, some stupid usage would happen. **We should anticipate it, to raise the alarm**.
+
+<br />
+
+## ✨ [FakeFaces](/fakeface) competition n.2: Produce a deepfake image, put a Member of the Paliament where they have never been. Once RBI become legitimate, also material online would be affected, hence remembering that modern AI can produce perfectly belivable fake images is the goal of this contest.
+
+
+--- 
+
+# Extra pages
+
+<br />
+
+<!-- ## 💫 [Timeline](/timeline): the current action plan. -->
+## 💫 [On Sandboxes](/on-sandboxes): and why they are a joke.
+## 💫 [Help](/help): there are three ways you can help this campaign, the time is short because AIAct has entered its final stage, so, its really **NOW OR NEVER**.
+
+<!-- ## 💫 [The problem](/problem) with face biometry: a collction of academic and public references about the problem intrinsic into face biometry technology. -->
+
+<br />
+
+---
+
+# Contacts
+
+<br />
+
+## If you want to contribute, collaborate, enhance, reuse, distribute material, or do any action that might be worthy of us to know about it, join the Matrix chat [#dontspyeu:matrix.org](https://app.element.io/#/room/#dontspyeu:matrix.org).
+
+<br />
+
+## Mail: **hello**@**dontspy**.**eu**

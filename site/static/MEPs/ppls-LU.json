@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Marc ANGEL",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/202073.jpg",
+    "group": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+    "nation": "Luxembourg",
+    "TLC": "LU",
+    "party": "Parti ouvrier socialiste luxembourgeois"
+  },
+  {
+    "name": "Charles GOERENS",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/840.jpg",
+    "group": "Renew Europe Group",
+    "nation": "Luxembourg",
+    "TLC": "LU",
+    "party": "Parti démocratique"
+  },
+  {
+    "name": "Christophe HANSEN",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/193419.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Luxembourg",
+    "TLC": "LU",
+    "party": "Parti chrétien social luxembourgeois"
+  },
+  {
+    "name": "Tilly METZ",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/193292.jpg",
+    "group": "Group of the Greens/European Free Alliance",
+    "nation": "Luxembourg",
+    "TLC": "LU",
+    "party": "Déi Gréng - Les Verts"
+  },
+  {
+    "name": "Monica SEMEDO",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197418.jpg",
+    "group": "Renew Europe Group",
+    "nation": "Luxembourg",
+    "TLC": "LU",
+    "party": "Indépendent"
+  },
+  {
+    "name": "Isabel WISELER-LIMA",
+    "urlimg": "https://www.europarl.europa.eu/mepphoto/197421.jpg",
+    "group": "Group of the European People's Party (Christian Democrats)",
+    "nation": "Luxembourg",
+    "TLC": "LU",
+    "party": "Parti chrétien social luxembourgeois"
+  }
+]

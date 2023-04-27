@@ -4,11 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "cd node_modules/@vladmandic/face-api; npm i --legacy-peer-deps; cd ../../../",
+    "copy": "cp duckface-analyzer.js node_modules/@vladmandic/face-api/demo/",
+    "reminder": "echo: 'run setup and then copy, and then enter in node_modules/@vladmandic/face-api to execute'",
+    "dev": "$(npm bin)/nodemon -i site ./backend"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "face-api.js": "^0.22.2"
+    "@tensorflow/tfjs-node": "^4.2.0",
+    "@vladmandic/face-api": "^1.7.9",
+    "canvas": "^2.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "linkedom": "^0.14.22",
+    "lodash": "^4.17.21",
+    "moment": "^2.0.0",
+    "mongodb": "^5.1.0",
+    "nodemon": "^2.0.20",
+    "zx": "^7.1.1"
   }
 }

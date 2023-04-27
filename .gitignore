@@ -1,5 +1,10 @@
 site/resources
 site/public
 site/*.lock
+site/static/js/_vendor/
+site/static/css/_vendor/
+
+# produced to pick mail and twitter addresses
+addresses/outputs/*.html
 
 node_modules
