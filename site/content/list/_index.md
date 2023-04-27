@@ -33,8 +33,7 @@ window.addEventListener('load', loadIsotope);
 
 const serverAPI = 
   window.location.hostname === 'localhost' ?
-  'http://localhost:2023/api' :
-  'https://stopspy.eu/api';
+  'http://localhost:2023/api' : '/api';
 
 let faceStats = null;
 

@@ -2,15 +2,55 @@
 title: "Know more about DontSpy.EU"
 ---
 
-# This campaign is designed by the [**Hermes Center**](https://hermescenter.org), Italian NGO for transparency and digital human rights.
+<br /> 
+<br /> 
 
-# It is made with the help of [**The Good Lobby**](https://www.thegoodlobby.eu/) and [**Info.nodes**](https://infonodes.org/).
+# We are part of [Reclaim your face](https://reclaimyourface.eu/), a coalition of 77 civil society organizations advocating to **ban biometric mass surveillance**.
 
-<br />
+<style>
 
----
+table {
+  padding-top: 1em;
+  background-color: white;
+  border-radius: 30px;
+}
 
-# We partecipated to [Raclaim Your Face](https://reclaimyourface.eu/), the campaign concluded in 2022, that collected signatures to ask for a **full ban of face recognition**.
+td {
+  text-align: center;
+}
+
+.our--logos {
+  padding-top: 1em;
+  width: 70%;
+}
+
+</style>
+
+<br /> 
+
+<table>
+  <thead>
+    <td>
+      <a target=_blank href="">
+        <img class="our--logos" src="/images/hermes.png" />
+      </a>
+    </td>
+    <td>
+      <a target=_blank href="">
+        <img class="our--logos" src="/images/infonodes.jpeg" />
+      </a>
+    </td>
+    <td>
+      <a target=_blank href="">
+        <img class="our--logos" src="/images/thegoodlobby.png" />
+      </a>
+    </td>
+  </thead>
+</table>
+
+<br /> 
+
+## This campaign is designed by the [**Hermes Center**](https://hermescenter.org), Italian NGO for transparency and digital human rights, [**The Good Lobby**](https://www.thegoodlobby.eu/) and [**Info.nodes**](https://infonodes.org/).
 
 <br />
 
@@ -20,16 +60,16 @@ title: "Know more about DontSpy.EU"
 
 <br />
 
-## ✨ [Open Data Faces](/list) competition n.1: Pull our data and enrich them with additional layer of face analysis. For example: compare them to a list of MugShots, or run some crazy AI system that attributes characteristic. We know it shouldn't work that way, but once it get legitimate, it is only a marketing problem to make it belivable. Be creative! we need to highlist that once face bioemtry get in the market, some stupid usage would happen. **We should anticipate it, to raise the alarm**.
+## ✨ [Open Data Faces](/list) **Pull our data and enrich them with additional layer of face analysis**. For example: compare them to a list of MugShots, or run some crazy AI system that attributes characteristic. We know it shouldn't work that way, but once AI biometry would be legitimate, it is only a marketing problem to make it belivable. **Be creative!** we need to highlist that once face bioemtry get in the market, some stupid usage would happen. **We should anticipate it, to raise the alarm**.
 
 <br />
 
-## ✨ [FakeFaces](/fakeface) competition n.2: Produce a deepfake image, put a Member of the Paliament where they have never been. Once RBI become legitimate, also material online would be affected, hence remembering that modern AI can produce perfectly belivable fake images is the goal of this contest.
+## ✨ [FakeFaces](/fakeface) **Produce a deepfake image, put a Member of the Paliament where they have never been**. Once Face biometry would be legitimate, also **online material** could be affected, hence remembering that modern AI can produce perfectly belivable fake images is the goal of this contest.
 
 
 --- 
 
-# Extra pages
+# Other pages
 
 <br />
 

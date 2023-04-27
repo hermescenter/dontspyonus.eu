@@ -101,8 +101,7 @@ const ENTRIES_NUMBER = 10;
 async function io() {
   const server = 
     window.location.hostname === 'localhost' ?
-    'http://localhost:2023/api/homepage' :
-    'https://stopspy.eu/api/homepage';
+    'http://localhost:2023/api/homepage' : '/api/homepage';
 
   let mepdata = null;
   try {
