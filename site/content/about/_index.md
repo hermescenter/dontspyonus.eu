@@ -31,17 +31,17 @@ td {
 <table>
   <thead>
     <td>
-      <a target=_blank href="">
+      <a target=_blank href="https://hermescenter.org">
         <img class="our--logos" src="/images/hermes.png" />
       </a>
     </td>
     <td>
-      <a target=_blank href="">
+      <a target=_blank href="https://infonodes.org">
         <img class="our--logos" src="/images/infonodes.jpeg" />
       </a>
     </td>
     <td>
-      <a target=_blank href="">
+      <a target=_blank href="https://www.thegoodlobby.eu">
         <img class="our--logos" src="/images/thegoodlobby.png" />
       </a>
     </td>
@@ -91,4 +91,4 @@ td {
 
 <br />
 
-## Mail: **hello**@**dontspy**.**eu**
+## Mail: **hello**@**dontspy**.**eu**, [git](https://github.com/hermescenter/dontspy.eu)

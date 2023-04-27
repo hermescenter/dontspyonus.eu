@@ -49,8 +49,7 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 
 <div id="facelist-7" class="container img__limit"></div>
 
-# You can donate to support a specific prize: Euro, Dollars, anything, even Crypto tokens. **After all, for the unethical data market, all money is equally good**.
-
+# The prizes are not big, **Today**. But you can [donate to increse the prizes](/help).
 
 # To **participate in the contests**, you need to send a tweet mentioning @HermesCenter and using hashtag #dontspyeu
 
@@ -66,3 +65,31 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 # **We’ll assign the prizes based on the sum of retweets and favorites**, when the campaign finishes, or at the end of May at the latest.
 
 # **If you’re interested in knowing more about the EU’s AI Act**, check [AI-sandboxing is broken by design](/on-sandboxes).
+
+<style>
+
+
+.final-logo {
+  width: 43%;
+}
+
+.centered {
+  text-align: center;
+}
+
+</style>
+
+<table class="centered">
+  <thead>
+    <td>
+      <img class="final-logo" src="/logo/4.png" />
+    </td>
+    <td>
+      <img class="final-logo" src="/logo/7.png" />
+    </td>
+    <td>
+      <img class="final-logo" src="/logo/2.png" />
+    </td>
+  </thead>
+</table>
+
