@@ -6,13 +6,13 @@
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <link rel="canonical" href="{{ .Permalink }}" />
-<meta itemprop=name content="{{ .Title }} | {{.Site.Title}}">
-<meta itemprop=description content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
-<meta property="og:title" content="{{ .Title }} | {{.Site.Title}}">
-<meta property="og:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+
+<meta property="og:title" content="DontspyEU">
+<meta property="og:description" content="We call for a full ban of face surveillance!">
 <meta property="og:type" content="website">
+<meta property="og:image" content="/logo/6.png">
 <meta property="og:url" content="{{.RelPermalink  | absURL }}">
-{{ template "_internal/google_analytics.html" . }}
+
 {{ $sass := resources.Get "sass/main.scss" }}
 {{ $style := $sass | resources.ToCSS }}
 {{ $css := slice  $style | resources.Concat "css/bundle.css" }}
