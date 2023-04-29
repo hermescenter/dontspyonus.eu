@@ -1,5 +1,6 @@
 ---
-title: "Explore data available and pictures uploaded!"
+title: "Explore data available"
+subtitle: "And pull via API the data for further exploration"
 ---
 
 <br>
@@ -7,9 +8,31 @@ title: "Explore data available and pictures uploaded!"
 
 ### 1. You can access data via API
 
-`curl https://stopspy.eu/api/details/Malta`
+<pre>
+curl https://dontspy.eu/api/details/Malta
+</pre>
 
-returns the metadata from the Maltise Memember of the Paliament.
+You can use any country name, it returns the metadata from the representatives:
+
+<pre>
+id:       "197403"
+name:     "Alex AGIUS SALIBA"
+urlimg:   "https://www.europarl.europa.eu/mepphoto/197403.jpg"
+group:    "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament"
+nation:   "Malta"
+TLC:      "MT"
+party:    "Partit Laburista"
+email:    "alex.agiussaliba@europarl.europa.eu"
+facerec:
+  gender              "male"
+  genderProbability   0.9735493063926697
+  age                 32.59959030151367
+  expressions	
+    emotion           "happy"
+    value             100
+</pre>
+
+<br />
 
 ### 2. Explore, stats by select a Member State 
 

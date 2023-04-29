@@ -757,9 +757,10 @@ section{
     line-height: 1em;
 }
 
-code {
+pre {
+    line-height: 1.1em;
+    font-size: 0.8em;
     font-family: monospace;
     color: #242329;
     background-color: rgb(255, 242, 213);
-    padding: 3px;
 }
