@@ -1,68 +1,23 @@
-/* mostly copied from ISOTOPE, love them always */
-
-* { box-sizing: border-box; }
-
-.button {
-  display: inline-block;
-  padding: 0.5em 1.0em;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-  color: #222;
-  font-family: sans-serif;
-  font-size: 16px;
-  text-shadow: 0 1px white;
-  cursor: pointer;
+/* these before the click */
+.emoji {
+  font-size: 1.9em;
 }
 
-.button:hover {
-  background-color: #fff2ff;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
+.state--name {
+  line-height: 2em;
+  font-size: 1.4em;
 }
 
-.button:active,
-.button.is-checked {
-  background-color: #ff4747;
+.list-of-meps {
+  width: 200px;
 }
 
-.button.is-checked {
-  color: #f5f2cc;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-}
-
-.button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
-
-/* ---- button-group ---- */
-
-.button-group {
-  margin-bottom: 20px;
-}
-
-.button-group:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.button-group .button {
-  float: left;
-  border-radius: 0;
-  margin-left: 0;
-  margin-right: 1px;
-}
-
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-
+/* these after the click */
 .element-item {
   position: relative;
-  float: left;
-  width: 100px;
-  height: 100px;
+  float: left; 
+  width: 200px;
+  height: 150px;
   margin: 5px;
   padding: 10px;
   background: palegoldenrod;
@@ -102,35 +57,20 @@
   top: 70px;
 }
 
-.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
-.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
-
-#state-mep-container {
-  width: 620px;
-}
-
 .alert {
   color: #ff4747;
   font-size: 1.4em;
 }
 
 .image-item {
-  float: left;
+  /* float: left; */
   border-radius: 0px 15px 0px 15px;
-  width: 300px;
+  width: 450px;
   padding: 4px;
   margin-bottom: 4px;
   background: palegoldenrod;
   color: #ff4747;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-right: 4px;
 }
 
@@ -140,23 +80,36 @@
 }
 
 .mepname {
-  font-weight: 800;
+  font-weight: 700;
+  padding-top: 20px;
+  font-size: 1.7em;
+}
+
+.biometry {
+  font-weight: 600;
   padding-top: 10px;
+  font-size: 1.2em;
 }
 
 .mepinfo {
   padding-top: 10px;
 }
 
+.mep-attributions {
+  padding: 4px;
+}
+
 .meprbi {
   padding: 4px;
+  width: 50%;
+  float: left;
 }
 
 .contained-info {
   font-size: 0.7em;
   line-height: 0.7em;
   word-break: break-all;
-  width: 100px;
+  width: 250px;
   opacity: 0.6;
   float: right;
 }
@@ -167,8 +120,4 @@
   border-radius: 3px;
   margin: 1px;
   padding: 1px;
-}
-
-.table {
-  width: 400px;
 }

@@ -6,7 +6,7 @@ subtitle: "And pull via API the data for further exploration"
 <br>
 <br>
 
-### 1. You can access data via API
+## You can access data via API
 
 <pre>
 curl https://dontspy.eu/api/details/Malta
@@ -34,21 +34,18 @@ facerec:
 
 <br />
 
-### 2. Explore, stats by select a Member State 
+## Explore by Member State 
 
-<div id="sorts" class="button-group">
-  <button class="button is-checked" data-sort-by="name">Alphabetic order</button>
-  <!-- <button class="button" data-sort-by="symbol">🗣 Number of Parliament representatives</button> -->
-  <button class="button" data-sort-by="number">📷 Number of Pictures associated</button>
+<div id="member-states">
 </div>
 
 <div class="grid" id="state-list-container"></div>
 
 ### 3. Select a Member of the Parliament or filter by Political party
 
-<div class="table" id="state-mep-container"></div>
+<div class="table" id="state-mep-container">
+</div>
 
-<script src="/js/isotope.pkgd.min.js"></script>
 
 <script>
 
@@ -92,73 +89,15 @@ async function loadIsotope() {
     'Sweden': "🇸🇪"
   };
 
-  const response = await fetch(`${serverAPI}/stats`);
-  /* record the result in a global variable */
-  faceStats = await response.json();
-
-  // <p class="number">Representatives: 23</p>
-  const htmlblob = _.map(EUMS, function(flag, members) {
-    const amounts = _.find(faceStats, { _id : members });
-    console.log(amounts);
-    const rv = `<div onclick="expandNation(${members})"
-      id="${members}" class="element-item" photos=${amounts.counter}>
-      <p class="name">${members}</p>
-      <p class="symbol">${flag}</p>
-      <p class="number">🗣 ${amounts.counter}</p>
-      <p class="weight">📷 ${amounts.counter}</p>
-    </div>`;
-    return rv;
+  let inj = "";
+  _.each(EUMS, (emoji, ms) => {
+    inj += `<p class="state--name">
+      <span id="${ms}" class="emoji">${emoji}</span>
+      <a class="clickable-state" href="#${ms}" onclick="expandNation(${ms})">${ms}</a>
+      <div class="list-of-meps" id="state-mep-container-${ms}"></div>
+    </p>`;
   });
-  $("#state-list-container").html(htmlblob.join('\n'));
-
-  // init Isotope
-  var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.name',
-      number: '[photos] parseInt',
-    }
-  });
-
-  // filter functions
-  var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
-    }
-  };
-
-  // bind filter button click
-  $('#filters').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    console.log({filterValue});
-    $grid.isotope({ filter: filterValue });
-  });
-
-  // bind sort button click
-  $('#sorts').on( 'click', 'button', function() {
-    var sortByValue = $(this).attr('data-sort-by');
-    console.log({sortByValue});
-    $grid.isotope({ sortBy: sortByValue });
-  });
-
-  // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
+  $("#member-states").html(inj);
 }
 
 async function expandNation(e) {
@@ -166,6 +105,8 @@ async function expandNation(e) {
   const memberState = e.id;
   const response = await fetch(`${serverAPI}/details/${memberState}`);
   const faceStats = await response.json();
+
+  const targetId = `#state-mep-container-${memberState}`;
 
   const htmlblob = _.map(faceStats, function(mep, n) {
     /* TLC: "DE"
@@ -175,9 +116,11 @@ async function expandNation(e) {
        nation : "Germany"
        party : "Alternative für Deutschland"
        urlimg : "https://www.europarl.europa.eu/mepphoto/197475.jpg" */
+
     const emotions = _.map(mep.facerec.expressions, function(inf) {
       return `<div class="meprbi">${inf.emotion} ${inf.value}%</div>`;
     }).join('\n');
+
     const rv = `<div id="mep--${mep.id}" class="image-item">
       <img class="contained-image" src="${mep.urlimg}" />
       <div class="contained-info">
@@ -185,14 +128,16 @@ async function expandNation(e) {
         <div class="mepinfo">${mep.party}</div>
 
         <hr />
-        <div class="mepname">Biometry says:</div>
-        <div class="label">Gender</div>
-        <div class="meprbi">${Math.round(100 * mep.facerec.genderProbability)}% ${mep.facerec.gender}</div>
+        <div class="biometry">Biometry says:</div>
+        <div class="label">Gender:</div>
+        <div class="mep-attributions">
+          ${Math.round(100 * mep.facerec.genderProbability)}% ${mep.facerec.gender}
+        </div>
 
-        <div class="label">Age</div>
-        <div class="meprbi">${Math.round(mep.facerec.age)} years</div>
+        <div class="label">Age:</div>
+        <div class="mep-attributions">${Math.round(mep.facerec.age)} years</div>
 
-        <div class="label">Emotion</div>
+        <div class="label">Emotions:</div>
         ${emotions}
 
         <br />
@@ -200,7 +145,7 @@ async function expandNation(e) {
     </div>`;
     return rv;
   });
-  $("#state-mep-container").html(htmlblob.join('\n'));
+  $(targetId).html(htmlblob.join('\n'));
 }
 
 </script>

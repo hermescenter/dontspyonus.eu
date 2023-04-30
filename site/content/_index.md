@@ -49,9 +49,9 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 
 <div id="facelist-7" class="container img__limit"></div>
 
-# The prizes are not big, **Today**. But you can [donate to increse the prizes](/help).
+# The prizes are not big, **Today**. But you can [donate to increase the prizes](/help).
 
-# To **participate in the contests**, you need to send a tweet mentioning @HermesCenter and using hashtag #dontspyeu
+# To **participate in the contests**, you need to send a tweet mentioning @HermesCenter and using hashtag <a href="https://twitter.com/search?q=%23dontspyeu" target=_blank>#dontspyeu</a>
 
 <div id="facelist-8" class="container img__limit"></div>
 

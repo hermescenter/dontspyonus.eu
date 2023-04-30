@@ -2,6 +2,10 @@
 title: 'Loghi & altri esperimenti'
 ---
 
+### Color palette
+
+[https://coolors.co/ff4747-f5f2cc-fff2ff-25d0c8](https://coolors.co/ff4747-f5f2cc-fff2ff-25d0c8)
+
 # 1
 
 ![](/logo/1.png)

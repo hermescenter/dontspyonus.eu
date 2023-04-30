@@ -6,12 +6,12 @@ subtitle: "because a face recognition tool doesn't care if the image is actually
 <br>
 
 # For **a massive face surveillance system** the information provenience doesn’t matter.
-# **DeepFakes are a modern problem**! Not addressed by who deploy biometric analysis.
+# **DeepFakes are a modern problem**! Not addressed by those deploy biometric analysis.
 
 ---
 <br>
 
-# Produce a deepfake image, **put a Member of the Paliament where they have never been**. Once Face biometry become legitimate, also the online material would be analyzed and used, hence this game is to remind that modern AI can produce perfectly belivable images, that would hunt you even if fake!
+# Produce a deepfake image, **put a Member of the Parliament where they have never been**. Once Face biometry become legitimate, also the online material would be analyzed and used, hence this game is to remind that modern AI can produce perfectly believable images, that would hunt you even if fake!
 
 ---
 
@@ -77,10 +77,11 @@ subtitle: "because a face recognition tool doesn't care if the image is actually
 
 function buildThing() {
     let inj ="";
-    _.each(blob, function(list, cname) {
-        const emoji = EUMS[cname];
+    /* iterating over EUMS guarantee alphabetic order */
+    _.each(EUMS, (emoji, ms) => {
+        const list = blob[ms];
 
-        inj += `<p class="country--wrap">${emoji} ${cname}`;
+        inj += `<p class="country--wrap">${emoji} ${ms}`;
         _.each(list, (mep) => {
             inj += `<p class="mep--info">
                <a title="Search Images of ${mep.name}" class="camera" href="https://duckduckgo.com/?q=${mep.name}&iax=images&ia=images">📸</a>
