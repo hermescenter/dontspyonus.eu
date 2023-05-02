@@ -138,8 +138,19 @@ app.get('/api/homepage', cors(), async function(req, res) {
     const amount = 40;
     const retv = await queryMEPs({});
 
+    const acceptable = _.compact(_.map(retv, function(mep) {
+      // console.log(mep?.facerec[0]?.box);
+      if(typeof mep?.facerec[0]?.box !== typeof [])
+        return null;
+      if(mep.facerec[0].box[0] > 30)
+        return null;
+      return mep;
+    }));
+
+    console.log(`from ${retv.length} to ${acceptable.length}`)
+
     const random40 = _.times(amount, function(i) {
-      const o = _.omit( _.sample(retv), ['_id', 'urlimg']);
+      const o = _.omit( _.sample(acceptable), ['_id', 'urlimg']);
       o.facerec = _.omit(_.first(o.facerec), ['_id', 'id']);
       return o;
     });

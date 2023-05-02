@@ -46,31 +46,58 @@ function createCanvas(o, imageNumber) {
   const targetSpan = document.getElementById(`mep--${o.id}`);
 
   const spanRect = targetSpan.getBoundingClientRect();
-  // console.log(coord);
 
   /* align the canvas over the image */
   canvas.style.position = 'absolute';
   canvas.style.left = `${spanRect.x}px`;
 
   const ctx = canvas.getContext('2d');
-  ctx.lineWidth = 4;
-  ctx.strokeStyle = '#FF4747';
-  ctx.fillStyle = '#FF4747';
 
   const text1 = `${Math.round(100 * o.facerec.genderProbability)}% ${o.facerec.gender}`;
-  addText(text1, ctx, 0, 10);
+  addText(text1, ctx, 0, 5);
 
   const text2 = `${Math.round(o.facerec.age)} years`;
-  addText(text2, ctx, 0, 25);
+  addText(text2, ctx, 0, 20);
 
   const text3 = `${o.facerec.expression[0]} ${Math.round(100 * o.facerec.expression[1])}%`;
-  addText(text3, ctx, 0, 40);
-  /*
+  addText(text3, ctx, 0, 35);
+  
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = '#FF4747';
+
   ctx.beginPath()
+  console.log(imageNumber, o.facerec.box);
+  const box = o.facerec.box;
+  /* x, y, width, height */
+
+  const endRightX = (box[2] - box[0]);
+  const ourMargin = 8;
+
+  ctx.moveTo(box[0] + ourMargin, box[1]);
+  ctx.lineTo(endRightX, box[1]);
+  ctx.stroke(); // Draw it
+
+  ctx.moveTo(box[0], box[1] + ourMargin);
+  ctx.lineTo(box[0], box[3]);
+  ctx.stroke(); // Draw it
+
+  /* ok and these are the first |- */
+
+  ctx.beginPath()
+  ctx.moveTo(endRightX, box[1]);
+  ctx.lineTo(endRightX, box[3] - ourMargin);
+  ctx.stroke(); // Draw it
+
+  ctx.moveTo(endRightX - ourMargin, box[3]);
+  ctx.lineTo(box[0], box[3] );
+  ctx.stroke(); // Draw it
+
+
+  /*
   ctx.rect(o.facerec.box[0], o.facerec.box[1],
-    o.facerec.box[2], o.facerec.box[3]);
-  ctx.stroke();
-  */
+    o.facerec.box[2], o.facerec.box[3]); */
+  // ctx.stroke();
+  
 
   targetSpan.appendChild(canvas);
 }
@@ -147,7 +174,7 @@ async function canvasPaint(mepdata) {
   /* after having created the images, let't build the canvas on top */
   for(const rowNumber of _.times(ENTRIES_NUMBER) ) {
     const elements = _.each(mepdata[rowNumber], createCanvas);
-    // console.log(`Build overlay for line n ${rowNumber}`);
+    console.log(`Build overlay for line ${rowNumber}`);
   };
 }
 
