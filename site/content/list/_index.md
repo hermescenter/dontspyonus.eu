@@ -36,16 +36,7 @@ facerec:
 
 ## Explore by Member State 
 
-<div id="member-states">
-</div>
-
-<div class="grid" id="state-list-container"></div>
-
-### 3. Select a Member of the Parliament or filter by Political party
-
-<div class="table" id="state-mep-container">
-</div>
-
+<div id="member-states"></div>
 
 <script>
 
