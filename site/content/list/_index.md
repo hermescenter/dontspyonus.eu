@@ -9,7 +9,7 @@ subtitle: "And pull via API the data for further exploration"
 ## You can access data via API
 
 <pre>
-curl https://dontspy.eu/api/details/Malta
+curl https://dontspyonus.eu/api/details/Malta
 </pre>
 
 You can use any country name, it returns the metadata from the representatives:

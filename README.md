@@ -1,4 +1,6 @@
-# [DontspyEU](https://dontspy.eu)
+# [DontspyEU](https://dontspyonus.eu)
+
+p.s. The domain name is temporary, as `dontspy.eu` is blocked, `dontspyonus.eu` would become a redirect.
 
 ![](https://dontspy.eu/logo/6.png)
 

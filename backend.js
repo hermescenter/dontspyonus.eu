@@ -119,12 +119,12 @@ app.get('/api/details/:memberState', cors(), async function(req, res) {
   }
 });
 
-app.get('/', cors(), function(req, res) {
+app.get('/api', cors(), function(req, res) {
   const implemented = [
     "/api/meps/:filter?", "/api/homepage", "/api/stats", "/api/details/:memberState" ];
   res.status(200);
   res.send(`
-    <code>dontspy.eu</code><hr/>
+    <code>dontspyonus.eu</code><hr/>
     <h3>Implemented APIs</h3>
     <pre>
 ${implemented.join("\n\r")}
