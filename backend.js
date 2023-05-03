@@ -121,7 +121,7 @@ app.get('/api/details/:memberState', cors(), async function(req, res) {
 
 app.get('/api', cors(), function(req, res) {
   const implemented = [
-    "/api/meps/:filter?", "/api/homepage", "/api/stats", "/api/details/:memberState" ];
+    "/api/meps/:filter?", "/api/homepage", "/api/stats", "/api/details/:memberState", "/api/emotional" ];
   res.status(200);
   res.send(`
     <code>dontspyonus.eu</code><hr/>
@@ -130,6 +130,53 @@ app.get('/api', cors(), function(req, res) {
 ${implemented.join("\n\r")}
     </pre>`
   );
+});
+
+app.get('/api/emotionals', cors(), async (req, res) => {
+  try {
+    const data = await queryMEPs({});
+    /* neutral, happy, sad, angry,
+       fearful, disgusted, surprised */
+
+    const structure = {
+      sad: [],
+      angry: [],
+      fearful: [],
+      disgusted: [],
+      surprised: []
+    };
+    /* in the retval we ignore the first two emotions */
+
+    const emotionals = _.reduce(data, (memo, mep) => {
+      if(!mep.facerec.length)
+        return memo;
+
+      const considered = _.keys(structure);
+      _.each(considered, function(emotion) {
+        const value = _.round(mep.facerec[0].expressions[emotion] * 100, 1);
+        if(value > 10)
+          memo[emotion].push({
+            id: mep.id,
+            name: mep.name,
+            nation: mep.nation,
+            value
+          })
+      })
+      return memo;
+    }, structure);
+
+    console.log(`Returning the emotion list`);
+    res.json(emotionals);
+
+  } catch(error) {
+    res.status(500);
+    console.log(`Error: ${error.message}`);
+    res.json({
+      error: true,
+      message: error.message
+    })
+  }
+
 });
 
 app.get('/api/homepage', cors(), async function(req, res) {
