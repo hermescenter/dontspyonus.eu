@@ -46,8 +46,38 @@ title: "Know more about DontSpy.EU"
 
 <br />
 
-## If you want to contribute, collaborate, enhance, reuse, distribute material, or do any action that might be worthy of us to know about it, join the Matrix chat [#dontspyeu:matrix.org](https://app.element.io/#/room/#dontspyeu:matrix.org).
+## To contribute, collaborate, enhance, reuse, distribute material, or do any action that might be worthy of us to know about it
 
-<br />
+<style>
+  table {
+    padding-top: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8em;
+  }
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+</style>
 
-## Mail: **hello**@**dontspyonus**.**eu**, [git](https://github.com/hermescenter/dontspy.eu)
+<table>
+  <tr>
+    <td>
+      <h2>
+        <a href="https://app.element.io/#/room/#dontspyeu:matrix.org">#dontspyeu:matrix.org</a>
+      </h2>
+    </td>
+    <td>
+     <a href="https://github.com/hermescenter/dontspy.eu">
+      <img style="height:24px" src="/images/github-icon.png" />
+    </a>
+    </td>
+    <td>
+      <h2>
+        <strong>hello</strong>@<strong>dontspyonus</strong>.<strong>eu</strong>
+      </h2> 
+    </td>
+  </tr>
+</table>
