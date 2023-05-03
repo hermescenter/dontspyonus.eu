@@ -50,19 +50,30 @@ subtitle: "because a face recognition tool doesn't care if the image is actually
 <div class="grid-container">
 
   <div>
-    <h1><strong>How to participate?</strong> tweet the generated picture with:</h1>
+    <h1><strong>How to participate?</strong></h1>
+    <h1>
+      <code>1</code> Pick a Member of the Parliament, explore their existing pictures (📸)
+    </h1>
     <br>
     <h1>
-      <code>1</code> Mention
+      <code>2</code> Produce a Deep Fake!
+    </h1>
+    <br>
+    <h1>
+      <code>3</code> 
+      Tweet your creation! To be considered in the competition, you have to: 
+    </h1>
+    <h2>
+      — <strong>Mention</strong>
       <a href="https://twitter.com/HermesCenter" target=_blank>@HermesCenter</a>
-    </h1>
-    <h1>
-      <code>2</code> Hashtag 
+    </h2>
+    <h2>
+      — Add the <strong>hashtag</strong>
       <a href="https://twitter.com/search?q=%23dontspyeu" target=_blank>#DontSpyEu</a>
-    </h1>
-    <h1>
-       <code>3</code> Mention on Twitter the depicted <strong>Member of the Parliament</strong>
-    </h1>
+    </h2>
+    <h2>
+       — <strong>Mention</strong> the twitter account of the depicted Member of the Parliament
+    </h2>
   </div>
 
   <div>
