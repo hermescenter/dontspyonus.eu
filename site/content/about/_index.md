@@ -7,47 +7,6 @@ title: "Know more about DontSpy.EU"
 
 # We are part of [Reclaim your face](https://reclaimyourface.eu/), a coalition of 77 civil society organizations advocating to **ban biometric mass surveillance**.
 
-<style>
-
-table {
-  padding-top: 1em;
-  background-color: white;
-  border-radius: 30px;
-}
-
-td {
-  text-align: center;
-}
-
-.our--logos {
-  padding-top: 1em;
-  width: 70%;
-}
-
-</style>
-
-<br /> 
-
-<table>
-  <thead>
-    <td>
-      <a target=_blank href="https://hermescenter.org">
-        <img class="our--logos" src="/images/hermes.png" />
-      </a>
-    </td>
-    <td>
-      <a target=_blank href="https://infonodes.org">
-        <img class="our--logos" src="/images/infonodes.jpeg" />
-      </a>
-    </td>
-    <td>
-      <a target=_blank href="https://www.thegoodlobby.eu">
-        <img class="our--logos" src="/images/thegoodlobby.png" />
-      </a>
-    </td>
-  </thead>
-</table>
-
 <br /> 
 
 ## This campaign is designed by the [**Hermes Center**](https://hermescenter.org), Italian NGO for transparency and digital human rights, [**The Good Lobby**](https://www.thegoodlobby.eu/) and [**Info.nodes**](https://infonodes.org/).
