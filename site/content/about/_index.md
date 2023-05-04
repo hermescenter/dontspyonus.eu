@@ -25,7 +25,13 @@ title: "Know more about DontSpy.EU"
 
 ## ✨ [FakeFaces](/fakeface) **Produce a deepfake image, put a Member of the Paliament where they have never been**. Once Face biometry would be legitimate, also **online material** could be affected, hence remembering that modern AI can produce perfectly belivable fake images is the goal of this contest.
 
+---
 
+# Technology
+
+<br />
+
+## ⚙️  [face-api.js](https://github.com/vladmandic/face-api/) is the open source framework used in this project. [Try it out on your webcam](https://justadudewhohacks.github.io/face-api.js/webcam_face_expression_recognition).
 --- 
 
 # Other pages
