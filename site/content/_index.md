@@ -13,33 +13,33 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 
 # Members of the European Parliament are considering banning some of these harmful practices.
 
-# This campaign wants to ensure that **NOBODY can use face surveillance technologies in public spaces**.
+# This campaign aims to ensure that **NOBODY can use face surveillance technologies in public spaces**.
 
 <div id="facelist-2" class="container img__limit"></div>
 
 # Not in real-time, not later on using public footage. Not using images scraped from the internet. **Never**: forbidden forever!
 
-# To let **European decision-makers** better understand the problem that they have **the power to stop**, we want to run a few experiments.
+# We will run a few experiments **to let European decision-makers better comprehend** the issues they have the power to halt.
 
 <div id="facelist-3" class="container img__limit"></div>
 
-# What would happen if the AI Act fails to ban face recognition and categorisation in public? Let’s see! We have collected all the faces from the European Parliament website and analysed them with software currently available to anyone.
+# What if the AI Act fails to ban face recognition and categorisation in public? Let’s see! We have collected all the MEPs' faces and analysed them with software currently available to anyone.
 
 <div id="facelist-4" class="container img__limit"></div>
 
-# In the same way the surveillance data market analyses people’s faces to ‘enrich’ them, you can consult the [Open Data Faces](/list), pull the data we’re releasing openly, and **run some AI attribution models on them** 🤩 
+# Similarly to how the surveillance data market examines individuals' faces for 'enrichment,' you can explore the [Open Data Faces](/list) 🤩, access the openly released data, and apply AI attribution models to gain insights.
 
-# It’s **not reliable or accurate**, and it’s **likely to lead to discrimination**. But that has not stopped companies and governments using these systems against us!
+# It’s **neither reliable nor accurate**, and it’s likely to lead to discrimination. But that has not stopped companies and governments from using these systems against us!
 
 <div id="facelist-5" class="container img__limit"></div>
 
-# To properly simulate the unethical data market, this is also a contest. The winner will be the wildest, scariest, or most original data ‘enrichment’.
+# To effectively simulate the unethical data market, we've also launched a contest. **The winner will be the wildest, scariest, or most original** data ‘enrichment’.
 
 {{<prize>}}
 
-# **DeepFakes are also a modern problem**. Although they unlawfully scrape the internet for existing faces to exploit, for **a massive face surveillance system** the information provenience doesn’t matter.
+# **DeepFakes are also a modern problem**. We can't avoid that they might be produced, but **if legitimized**, massive biometry system like `pimeyes` or `clearview` would incorporate the false information to the victim profile. **With no control or awareness for the affected citizen**.
 
-# Join the second contest: [MEP DeepFake](/fakeface)!
+# It summarize why there is a **second contest**, about producing the most surprising [MEP DeepFake](/fakeface)!
 
 {{<prize>}}
 
@@ -58,7 +58,7 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 # If you’re producing **a tool, add a link**. If you’re producing a **picture, mention the original MEP**. See more details in [Open Data Faces](/list), and [FakeFace](/fakeface) pages.
 
 
-# Of course, **we’ll stop the campaign if the European Parliament permanently bans all these types of face surveillance**.
+# Needless to say, **we’ll stop the campaign if the European Parliament will permanently bans all these types of face surveillance**.
 
 <div id="facelist-9" class="container img__limit"></div>
 
