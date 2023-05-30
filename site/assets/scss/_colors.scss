@@ -1,0 +1,83 @@
+// Default colors
+$white: #ffffff;
+$black: #000000;
+
+// Primary Color: Teal
+
+$teal-list: (
+  "50": #f0fdfa,
+  "100": #ccfbf1,
+  "200": #99f6e4,
+  "300": #5eead4,
+  "400": #2dd4bf,
+  "500": #14b8a6,
+  "600": #0d9488,
+  "700": #0f766e,
+  "800": #115e59,
+  "900": #134e4a,
+);
+
+
+$teal-50: map-get($teal-list, "50");
+$teal-100: map-get($teal-list, "100");
+$teal-200: map-get($teal-list, "200");
+$teal-300: map-get($teal-list, "300");
+$teal-400: map-get($teal-list, "400");
+$teal-500: map-get($teal-list, "500");
+$teal-600: map-get($teal-list, "600");
+$teal-700: map-get($teal-list, "700");
+$teal-800: map-get($teal-list, "800");
+$teal-900: map-get($teal-list, "900");
+
+
+// Secondary Color: Cool Gray
+
+$coolgray-list: (
+  "50":  #f9fafb,
+  "100": #f3f4f6,
+  "200": #e5e7eb,
+  "300": #d1d5db,
+  "400": #9ca3af,
+  "500": #6b7280,
+  "600": #4b5563,
+  "700": #374151,
+  "800": #1f2937,
+  "900": #111827,
+);
+
+
+$coolgray-50: map-get($coolgray-list, "50");
+$coolgray-100: map-get($coolgray-list, "100");
+$coolgray-200: map-get($coolgray-list, "200");
+$coolgray-300: map-get($coolgray-list, "300");
+$coolgray-400: map-get($coolgray-list, "400");
+$coolgray-500: map-get($coolgray-list, "500");
+$coolgray-600: map-get($coolgray-list, "600");
+$coolgray-700: map-get($coolgray-list, "700");
+$coolgray-800: map-get($coolgray-list, "800");
+$coolgray-900: map-get($coolgray-list, "900");
+
+  
+
+@each $value in $teal-list {
+  .background-teal-#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+  .color-teal-#{nth($value, 1)} {
+    color: nth($value, 2) !important;
+  }
+}
+
+@each $value in $coolgray-list {
+  .background-coolgray-#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+  .color-coolgray-#{nth($value, 1)} {
+    color: nth($value, 2) !important;
+  }
+}
+  
+.background-white{
+  background-color: #fff;
+}
+  

@@ -1,21 +1,96 @@
 languageCode = "en-us"
 title = "Don't Spy EU"
 logo = "/logo/6.png"
-theme = "fmeps"
 
-defaultContentLanguage = 'en'
-[languages]
-  [languages.it]
-    languageName = 'it'
-    title = "🇮🇹 Europa Non Spiarci!"
-    weight = 2
-  [languages.en]
-    languageName = 'en'
-    title = "Don't Spy EU!"
-    weight = 1
+#defaultContentLanguage = 'en'
+#[languages]
+#  [languages.it]
+#    languageName = 'it'
+#    title = "🇮🇹 Europa Non Spiarci!"
+#    weight = 2
+#  [languages.en]
+#    languageName = 'en'
+#    title = "Don't Spy EU!"
+#    weight = 1
 
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = true
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = true
+
+pluralizeListTitles = false
+paginate = 6
+
+[build]
+  writeStats = true
+  
+[permalinks]
+  blog = "/blog/:filename/"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformBlog   = "2 January 2006"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+# Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "#"
+  [[params.social]]
+    name = "github"
+    url  = "#"
+
+# Menus - English
+[languages]
+   
+   [languages.en.params]
+    languageName = "English"
+    subtitle  = ""
+    contentDir   = "content"
+    weight    = 1
+    copyright = 'Some rights reserved. Unless otherwise noted, content on this page is under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" title="License"> Creative Commons license</a>.'
+  
+  # Main navigation Menu
+  [[languages.en.menu.main]]
+    identifier = "home"
+    name       = "Home"
+    url        = "/"
+    weight     = "1"
+    
+  [[languages.en.menu.main]]
+    identifier = "fakeface"
+    name       = "Fake face"
+    url        = "/fakeface/"
+    weight     = "2"
+
+  [[languages.en.menu.main]]
+    identifier = "opendatalist"
+    name       = "Open Data Faces"
+    url        = "/list/"
+    weight     = "3"
+

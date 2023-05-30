@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- HTML Meta Tags -->
+<title>Don't spy EU!</title>
+<meta name="description" content="We call for a full ban of biometric surveillance">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://dontspyonus.eu/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Don't spy EU!">
+<meta property="og:description" content="We call for a full ban of biometric surveillance">
+<meta property="og:image" content="https://dontspyonus.eu/logo/7.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="dontspyonus.eu">
+<meta property="twitter:url" content="https://dontspyonus.eu/">
+<meta name="twitter:title" content="Don't spy EU!">
+<meta name="twitter:description" content="We call for a full ban of biometric surveillance">
+<meta name="twitter:image" content="https://dontspyonus.eu/logo/7.png">
+
+<!-- Meta Tags Generated via https://opengraph.dev -->
+
+{{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
+{{ if hugo.IsProduction }}
+{{ $style = $style | resources.PostCSS | resources.Fingerprint "sha256" }}
+{{ end }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+<link rel="stylesheet" href="/css/all.min.css" media="all">
+<link rel="stylesheet" href="/css/bootstrap-4-utilities.css" media="all">
+<link rel="stylesheet" href="/css/upload.css">
+
+<script src='{{ "/js/lodash.min.js" | absURL }}'></script>
+<script src='{{ "/js/jquery-3.3.1.min.js" | absURL }}'></script>

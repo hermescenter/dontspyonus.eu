@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-12 py-5">
+                <h1>{{ .Title }}</h1>
+                <article>
+                    <div class="post-content pt-4">
+                        {{ range .Pages }}
+                        {{ end }}
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
