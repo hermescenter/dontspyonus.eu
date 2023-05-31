@@ -65,32 +65,3 @@ paginate = 6
     name = "github"
     url  = "#"
 
-# Menus - English
-[languages]
-   
-   [languages.en.params]
-    languageName = "English"
-    subtitle  = ""
-    contentDir   = "content"
-    weight    = 1
-    copyright = 'Some rights reserved. Unless otherwise noted, content on this page is under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" title="License"> Creative Commons license</a>.'
-  
-  # Main navigation Menu
-  [[languages.en.menu.main]]
-    identifier = "home"
-    name       = "Home"
-    url        = "/"
-    weight     = "1"
-    
-  [[languages.en.menu.main]]
-    identifier = "fakeface"
-    name       = "Fake face"
-    url        = "/fakeface/"
-    weight     = "2"
-
-  [[languages.en.menu.main]]
-    identifier = "opendatalist"
-    name       = "Open Data Faces"
-    url        = "/list/"
-    weight     = "3"
-

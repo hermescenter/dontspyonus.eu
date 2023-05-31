@@ -1,6 +1,7 @@
 ---
 title: "Paint the best Fakeface!"
 subtitle: "because a face recognition tool doesn't care if the image is actually true"
+type: "fakeface"
 ---
 
 <br>
@@ -43,7 +44,7 @@ subtitle: "because a face recognition tool doesn't care if the image is actually
 }
 .twlink:hover {
   background-color: '#25D0C8';
-  text-color: black;
+  color: black;
 }
 </style>
 
@@ -84,9 +85,11 @@ subtitle: "because a face recognition tool doesn't care if the image is actually
 
 </div>
 
+
 <script type="text/javascript">
 
 function buildThing() {
+  console.log("csdcsdcs'");
     let inj ="";
     /* iterating over EUMS guarantee alphabetic order */
     _.each(EUMS, (emoji, ms) => {

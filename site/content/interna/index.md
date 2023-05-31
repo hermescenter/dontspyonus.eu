@@ -1,5 +1,6 @@
 ---
 title: 'Loghi & altri esperimenti'
+type: "interna"
 ---
 
 ### Color palette

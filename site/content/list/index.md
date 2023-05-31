@@ -1,10 +1,17 @@
 ---
 title: "Explore data available"
 subtitle: "And pull via API the data for further exploration"
+type: "list"
 ---
 
 <br>
 <br>
+
+<style>
+  .h4 {
+    overflow-x: scroll;
+  }
+</style>
 
 ## You can access data via API
 
