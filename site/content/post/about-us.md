@@ -1,8 +1,7 @@
 ---
 title: "Know more about DontSpy.EU"
-date: "2023-01-01"
-subtitle: "cdsmcsdppo"
-description: "poeewfoe"
+date: "2023-05-01"
+description: "We're part of the Reclaim Your Face coalition that works to lobby for the full ban of Face Biometry in the AIAact"
 ---
 
 <br /> 

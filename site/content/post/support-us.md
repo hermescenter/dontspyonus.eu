@@ -1,5 +1,7 @@
 ---
 title: "Want to Help?"
+date: "2023-05-05"
+description: "You can donate to sustain the prizes, or spread the message. Make deepfakes, or talk to your friend that can't stop dreaming about AI: its success depends also on how technology serves society and don't oppress it. We are fighting for this"
 ---
 
 # `1` Spread this message among AI pratictiones: We need someone winning the prizes, **we need people playing with MEPs faces** before a multi billion market start to play over ours.

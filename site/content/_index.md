@@ -45,11 +45,11 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 
 <div id="facelist-6" class="container img__limit"></div>
 
-# You can help this campaign in different ways. **If you want to help ban face recognition, emotion recognition and face categorisation** consider the [following options](/help) to get involved
+# You can help this campaign in different ways. **If you want to help ban face recognition, emotion recognition and face categorisation** consider the [following options](/post/support-us) to get involved
 
 <div id="facelist-7" class="container img__limit"></div>
 
-# Right now, the prizes are small, but they will grow through [donations](/help)
+# Right now, the prizes are small, but they will grow through [donations](/post/support-us)
 
 # To **participate in the contests**, you need to send a tweet mentioning @HermesCenter and using hashtag <a href="https://twitter.com/search?q=%23dontspyeu" target=_blank>#dontspyeu</a>
 

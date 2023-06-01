@@ -3,13 +3,27 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-10 col-md-12 col-12 py-5">
-                <h1>{{ .Title }}</h1>
-                <article>
-                    <div class="post-content pt-4">
-                        {{ range .Pages }}
-                        {{ end }}
-                    </div>
-                </article>
+                <br>
+                <br>
+                {{ .Content }}
+                <hr />
+                <div class="post-group">
+                    {{ range .Pages }}
+                    <p class="post--list">
+                        <span class="publication--time">
+                            {{ .Params.date.Format "2006-01-02" }}
+                        </span>
+
+                        <a class="link" href="{{ .RelPermalink }}">
+                            {{ .Title }}
+                        </a>
+                        <br />
+                        <div class="preview">
+                            {{ .Page.Description }}
+                        </div>
+                    </p>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>

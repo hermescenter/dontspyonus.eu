@@ -764,3 +764,23 @@ code, pre {
     color: #242329;
     background-color: rgb(255, 242, 213);
 }
+
+/* work in progres in list.html, single.html and baseof.html */
+.publication--time {
+    font-size: 0.8em;
+    background-color: #FF474720;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+.preview {
+    font-size: 0.9em;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1em;
+}
+
+.post--list {
+    padding-top: 15px;
+}

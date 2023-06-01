@@ -3,7 +3,17 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-10 col-md-12 col-12 py-5">
-                <h1>{{ .Title }}</h1>
+                <p>
+                    <br>
+                    <a class="nav--campaign" href="/post">Posts</a> > {{ .Title }}
+                    <span class="publication--time">
+                        {{ .Params.date.Format "2006-01-02" }}
+                    </span>
+                </p>
+                <h1>
+                    {{ .Title }}
+                    <hr />
+                </h1>
                 <article>
                     <div class="post-content pt-4">
                         {{ .Content }}
