@@ -63,5 +63,6 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 
 # **We’ll assign the prizes based on the sum of retweets and favorites**, when the campaign finishes, or at the end of May at the latest
 
+<!--
 # **If you’re interested in knowing more about the EU’s AI Act**, check [AI-sandboxing is broken by design](/on-sandboxes)
-
+-->
