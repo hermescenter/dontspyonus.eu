@@ -4,14 +4,17 @@ date: "2023-06-03"
 description: "This small experimental visualization is meant to display all the faces with a graphic that can be easily used when campaigning about RBI"
 ---
 
+## This is just a disorganized list of faces. Please consider: 
+# **If you enlarge the page** you need to reload. **If squares appears outside the face location** refresh.
 
-# This is just a disorganized list of faces, at the moment, if some change is necessary, let's talk via mail.
+---
+
+# For anything else, let's talk via mail.
 
 <div id="only--you" class="container img__limit"> </div>
 
-# That's all! Because the page is particularly heavy, and paiting over pictures is not a very stable activity, this table might not turn out **as perfect as you can hope**. Just refresh.
+# That's all! cheers, and don't forget to smile in front of the cameras.
 
-<br />
 <br />
 
 <!--
