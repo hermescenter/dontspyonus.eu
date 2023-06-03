@@ -1,33 +1,26 @@
-{{ define "main" }}
-<section class="home section mt-5" id="home">
-  <div class="home__container container grid">
-    {{ .Content }}
-  </div>
-  <br />
-</section>
+---
+title: "Squared faces"
+date: "2023-06-03"
+description: "This small experimental visualization is meant to display all the faces with a graphic that can be easily used when campaigning about RBI"
+---
 
+
+# This is just a disorganized list of faces, at the moment, if some change is necessary, let's talk via mail.
+
+<div id="only--you" class="container img__limit"> </div>
+
+# That's all! Because the page is particularly heavy, and paiting over pictures is not a very stable activity, this table might not turn out **as perfect as you can hope**. Just refresh.
+
+<br />
+<br />
+
+<!--
+<div id="facelist-1" class="container img__limit"></div>
+-->
 
 <script type="text/javascript">
 
   function createImageElement(o) {
-    /*console.log(o);
-    TLC: "HR"
-    facerec: { fname: "197413.jpg", gender: "male", genderProbability: 0.8836937546730042, … }
-      age: 33.42464065551758
-      box: Array(4) [ 22.81641956781164, 74.55391730070114, 121.94719126224516, … ]
-      expression: Array [ "happy", 0.999958872795105 ]
-      expressions: Object { neutral: 0.000008262367373390589, happy: 0.999958872795105, sad: 2.0197088446138878e-9, … }
-      fname: "197413.jpg"
-      gender: "male"
-      genderProbability: 0.8836937546730042
-      imageShape: Array(4) [ 1, 215, 170, … ]
-      when: "2023-03-19T16:58:28.746Z"
-    },
-    group: "Group of the European People's Party (Christian Democrats)"
-    id: "197413"
-    name: "Karlo RESSLER"
-    nation: "Croatia"
-  party: "Hrvatska demokratska zajednica"*/
 
     const imgname = o?.facerec?.fname;
     return `
@@ -55,24 +48,46 @@
     canvas.style.left = `${spanRect.x}px`;
 
     const ctx = canvas.getContext('2d');
-    ctx.lineWidth = 4;
-    ctx.strokeStyle = '#FF4747';
-    ctx.fillStyle = '#FF4747';
 
     const text1 = `${Math.round(100 * o.facerec.genderProbability)}% ${o.facerec.gender}`;
-    addText(text1, ctx, 0, 10);
+    addText(text1, ctx, 0, 5);
 
     const text2 = `${Math.round(o.facerec.age)} years`;
-    addText(text2, ctx, 0, 25);
+    addText(text2, ctx, 0, 20);
 
     const text3 = `${o.facerec.expression[0]} ${Math.round(100 * o.facerec.expression[1])}%`;
-    addText(text3, ctx, 0, 40);
-    /*
+    addText(text3, ctx, 0, 35);
+
     ctx.beginPath()
-    ctx.rect(o.facerec.box[0], o.facerec.box[1],
-      o.facerec.box[2], o.facerec.box[3]);
-    ctx.stroke();
-    */
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = '#FF4747';
+
+    ctx.beginPath()
+    console.log(imageNumber, o.facerec.box);
+    const box = o.facerec.box;
+    /* x, y, width, height */
+
+    const endRightX = (box[2] - box[0]);
+    const ourMargin = 8;
+
+    ctx.moveTo(box[0] + ourMargin, box[1]);
+    ctx.lineTo(endRightX, box[1]);
+    ctx.stroke(); // Draw it
+
+    ctx.moveTo(box[0], box[1] + ourMargin);
+    ctx.lineTo(box[0], box[3]);
+    ctx.stroke(); // Draw it
+
+    /* ok and these are the first |- */
+
+    ctx.beginPath()
+    ctx.moveTo(endRightX, box[1]);
+    ctx.lineTo(endRightX, box[3] - ourMargin);
+    ctx.stroke(); // Draw it
+
+    ctx.moveTo(endRightX - ourMargin, box[3]);
+    ctx.lineTo(box[0], box[3]);
+    ctx.stroke(); // Draw it
 
     targetSpan.appendChild(canvas);
   }
@@ -97,13 +112,12 @@
     ctx.restore();
   }
 
-  const ENTRIES_NUMBER = 10;
-  /*This should be reflected by the shortcode in _index.md*/
-
-  async function io() {
+  /* this function calls the `squared` api that ensure pictures of the same 
+   * shape, wheres is easier to depict squares over them */
+  async function squarify() {
     const server =
       window.location.hostname === 'localhost' ?
-        'http://localhost:2023/api/homepage' : '/api/homepage';
+        'http://localhost:2023/api/squared' : '/api/squared';
 
     let mepdata = null;
     try {
@@ -119,49 +133,31 @@
     } catch (error) {
       console.log(`Error with server ${server}`);
       const m = `Unable to retrieve faces: ${error.message}`;
-      for (const rowNumber of _.times(ENTRIES_NUMBER)) {
-        const rowID = `#facelist-${rowNumber}`;
-        $(rowID).html(`<div class="alert">${m}</div>`);
-      }
+      $("#only--you").text(`Error: ${m}`);
       return;
     }
 
-    /*these functions loop 8 times because the 'mepdata'
-     * is divided in 8 chunks */
     await htmlAppend(mepdata);
-    await new Promise(resolve => setTimeout(resolve, 400));
+    await new Promise(resolve => setTimeout(resolve, 1500));
     await canvasPaint(mepdata);
   }
 
   async function htmlAppend(mepdata) {
-    /*in _index.md there are $ENTRIES_NUMBER <div>s*/
-    for (const rowNumber of _.times(ENTRIES_NUMBER)) {
-      const elements = _.map(mepdata[rowNumber], createImageElement);
-      const htmlblob = elements.join('');
-
-      const rowID = `#facelist-${rowNumber}`;
-      // console.log(`Appending ${htmlblob.length} to ${rowID}`);
-      $(rowID).html(htmlblob);
-    };
-  }
-
-  async function canvasPaint(mepdata) {
-    /*after having created the images, let't build the canvas on top*/
-    for (const rowNumber of _.times(ENTRIES_NUMBER)) {
-      const elements = _.each(mepdata[rowNumber], createCanvas);
-      // console.log(`Build overlay for line n ${rowNumber}`);
-    };
-  }
-
-  try {
-    io();
-  } catch (error) {
-    console.log(`Error: ${error.message}`);
-    _.times(10, function (listNumber) {
-      $(`#facelist-${listNumber}`).text(`Error: ${error.message}`);
+    _.each(mepdata, function (mep) {
+      const element = createImageElement(mep);
+      $("#only--you").append(element);
     });
   }
 
-</script>
+  async function canvasPaint(mepdata) {
+    _.each(mepdata, createCanvas);
+  }
 
-{{ end }}
+  try {
+    squarify();
+  } catch (error) {
+    console.log(`Error: ${error.message}`);
+    $("#only--you").text(`Error: ${error.message}`);
+  }
+
+</script>

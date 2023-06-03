@@ -6,8 +6,10 @@ const _ = require('lodash');
 const moment = require('moment');
 const MongoClient = require('mongodb').MongoClient;
 
+const mongoServer = `mongodb://127.0.0.1:27017/faces`;
+
 async function MongoRead(filter) {
-  const client = new MongoClient(`mongodb://127.0.0.1:27017/faces`);
+  const client = new MongoClient(mongoServer);
   await client.connect();
   const retv = await client
     .db()
@@ -19,7 +21,7 @@ async function MongoRead(filter) {
 }
 
 async function mepStats() {
-  const client = new MongoClient(`mongodb://127.0.0.1:27017/faces`);
+  const client = new MongoClient(mongoServer);
   await client.connect();
   const retv = await client
     .db()
@@ -39,7 +41,7 @@ async function mepStats() {
 }
 
 async function queryMEPs(filter) {
-  const client = new MongoClient(`mongodb://127.0.0.1:27017/faces`);
+  const client = new MongoClient(mongoServer);
   await client.connect();
   const retv = await client
     .db()
@@ -121,7 +123,8 @@ app.get('/api/details/:memberState', cors(), async function(req, res) {
 
 app.get('/api', cors(), function(req, res) {
   const implemented = [
-    "/api/meps/:filter?", "/api/homepage", "/api/stats", "/api/details/:memberState", "/api/emotional" ];
+    "/api/meps/:filter?", "/api/homepage", "/api/squared",
+    "/api/stats", "/api/details/:memberState", "/api/emotional" ];
   res.status(200);
   res.send(`
     <code>dontspyonus.eu</code><hr/>
@@ -179,6 +182,36 @@ app.get('/api/emotionals', cors(), async (req, res) => {
 
 });
 
+app.get('/api/squared', cors(), async function(req, res) {
+  try {
+    const data = await queryMEPs({});
+    const ready = _.compact(_.map(data, function(mep) {
+
+      // console.log(mep?.facerec[0]?.box);
+      if(typeof mep?.facerec[0]?.box !== typeof [])
+        return null;
+      if(mep.facerec[0].box[0] > 30)
+        return null;
+
+      const o = _.omit(mep, ['_id', 'urlimg']);
+      o.facerec = _.omit(_.first(o.facerec), ['_id', 'id']);
+      return o;
+    }));
+
+    console.log(`Squared API returning ${ready.length}`);
+    res.json(ready);
+
+  } catch(error) {
+    res.status(500);
+    console.log(`Squared API error: ${error.message}`);
+    res.json({
+      error: true,
+      message: error.message
+    })
+  }
+});
+
+
 app.get('/api/homepage', cors(), async function(req, res) {
   /* at the moment homepage returns random */
   try {
@@ -195,7 +228,7 @@ app.get('/api/homepage', cors(), async function(req, res) {
     res.json(_.chunk(random40, 4));
   } catch(error) {
     res.status(500);
-    console.log(`Error: ${error.message}`);
+    console.log(`Homepage API error: ${error.message}`);
     res.json({
       error: true,
       message: error.message
