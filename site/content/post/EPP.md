@@ -14,6 +14,26 @@ description: "A realistic antcipation of what's going to happen if our represent
 
 <script type="text/javascript" src="/js/group.js"></script>
 
+<style>
+  .image-item {
+    color: #4a026a !important;
+    width: 600px !important;
+  }
+  .contained-info {
+    width: 390px !important;
+  }
+  .contained-image {
+    margin-top: 20px;
+  }
+  .twitter-handle {
+    font-size: 1.3em;
+    line-height: 2em;
+    color: lightblue;
+    font-weight: 800;
+  }
+
+</style>
+
 <script type="text/javascript">
   try {
     rendermeps();

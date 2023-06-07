@@ -35,25 +35,66 @@ async function rendermeps() {
 
 }
 
+  const EUMS = {
+    'Austria': "🇦🇹",
+    'Belgium': "🇧🇪",
+    'Bulgaria': "🇧🇬",
+    'Croatia': "🇭🇷",
+    'Cyprus': "🇨🇾",
+    'Czechia': "🇨🇿",
+    'Denmark': "🇩🇰",
+    'Estonia': "🇪🇪",
+    'Finland': "🇫🇮",
+    'France': "🇫🇷",
+    'Germany': "🇩🇪",
+    'Greece': "🇬🇷",
+    'Hungary': "🇭🇺",
+    'Ireland': "🇮🇪",
+    'Italy': "🇮🇹",
+    'Latvia': "🇱🇻",
+    'Lithuania': "🇱🇹",
+    'Luxembourg': "🇱🇺",
+    'Malta': "🇲🇹",
+    'Netherlands': "🇳🇱",
+    'Poland': "🇵🇱",
+    'Portugal': "🇵🇹",
+    'Romania': "🇷🇴",
+    'Slovakia': "🇸🇰",
+    'Slovenia': "🇸🇮",
+    'Spain': "🇪🇸",
+    'Sweden': "🇸🇪"
+  };
+
 function loopOverFaces(faceStats, targetId) {
   const htmlblob = _.map(faceStats, function(mep, n) {
-    /* TLC: "DE"
-       group : "Identity and Democracy Group"
-       id : "197475"
-       name : "Christine ANDERSON"
-       nation : "Germany"
-       party : "Alternative für Deutschland"
-       urlimg : "https://www.europarl.europa.eu/mepphoto/197475.jpg" */
+    /* 
+    TLC: "BG"
+    email: "andrey.kovatchev@europarl.europa.eu"
+    facerec: Object { fname: "97968.jpg", gender: "male", genderProbability: 0.9898331165313721, … }
+    group: "Group of the European People's Party (Christian Democrats)"
+    id: "97968"
+    name: "Andrey KOVATCHEV"
+    nation: "Bulgaria"
+    party: "Citizens for European Development of Bulgaria"
+    twitter: "http://twitter.com/andreykovatchev"
+    urlimg: "https://www.europarl.europa.eu/mepphoto/97968.jpg" */
 
     const emotions = _.map(mep.facerec.expressions, function(inf) {
       return `<div class="meprbi">${inf.emotion} ${inf.value}%</div>`;
     }).join('\n');
 
+    const twitterSlot = mep.twitter ? `
+      <div class="label">Twitter:</div>
+      <div class="twitter-handle">
+        <a href="${mep.twitter}" target="_blank">${mep.twitter.replace(/http.*twitter.com./, '@')}</a>
+      </div>
+    ` : '';
+
     const localimg = `/MEPs/pics/${mep.id}.jpg`;
     const rv = `<div id="mep--${mep.id}" class="image-item">
       <img class="contained-image" src="${localimg}" />
       <div class="contained-info">
-        <div class="mepname">${mep.name}</div>
+        <div class="mepname">${EUMS[mep.nation]} ${mep.name}</div>
         <div class="mepinfo">${mep.party}</div>
 
         <hr />
@@ -65,6 +106,8 @@ function loopOverFaces(faceStats, targetId) {
 
         <div class="label">Age:</div>
         <div class="mep-attributions">${Math.round(mep.facerec.age)} years</div>
+
+        ${twitterSlot}
 
         <div class="label">Emotions:</div>
         ${emotions}
