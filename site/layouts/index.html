@@ -10,25 +10,6 @@
 <script type="text/javascript">
 
   function createImageElement(o) {
-    /*console.log(o);
-    TLC: "HR"
-    facerec: { fname: "197413.jpg", gender: "male", genderProbability: 0.8836937546730042, … }
-      age: 33.42464065551758
-      box: Array(4) [ 22.81641956781164, 74.55391730070114, 121.94719126224516, … ]
-      expression: Array [ "happy", 0.999958872795105 ]
-      expressions: Object { neutral: 0.000008262367373390589, happy: 0.999958872795105, sad: 2.0197088446138878e-9, … }
-      fname: "197413.jpg"
-      gender: "male"
-      genderProbability: 0.8836937546730042
-      imageShape: Array(4) [ 1, 215, 170, … ]
-      when: "2023-03-19T16:58:28.746Z"
-    },
-    group: "Group of the European People's Party (Christian Democrats)"
-    id: "197413"
-    name: "Karlo RESSLER"
-    nation: "Croatia"
-  party: "Hrvatska demokratska zajednica"*/
-
     const imgname = o?.facerec?.fname;
     return `
     <div class="float--left">
