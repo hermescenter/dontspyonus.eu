@@ -4,7 +4,7 @@ date: "2023-06-07"
 description: "A realistic antcipation of what's going to happen if our representative legitimize RBI in public spaces"
 ---
 
-# Dear representative from the European People's Party; Your action soon would impact 446 millions of European citizen, and just to be sure you are fully aware of what does int mean to legimizate face biometry in public spaces by private, please follow this page.
+# Dear representative from the European People's Party; Your action will impact soon 446 millions of European citizen, so we want to be sure that you are fully aware of what "legitimate face biometry in public spaces" means. Please follow this page.
 
 ---
 
