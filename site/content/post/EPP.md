@@ -1,7 +1,7 @@
 ---
 title: "To the European People's Party with 💋 and metadata"
 date: "2023-06-07"
-description: "A realistic antcipation of what's going to happen if our representative legitimize RBI in public spaces"
+description: "A realistic anticipation of what is going to happen if our representative legitimize RBI in public spaces"
 ---
 
 # Dear representative from the European People's Party; Your action will impact soon 446 millions of European citizen, so we want to be sure that you are fully aware of what "legitimate face biometry in public spaces" means. Please follow this page.
