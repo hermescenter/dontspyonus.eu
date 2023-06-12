@@ -126,7 +126,8 @@ app.get('/api/details/:memberState', cors(), async function (req, res) {
 app.get('/api', cors(), function (req, res) {
   const implemented = [
     "/api/meps/:filter?", "/api/homepage", "/api/squared",
-    "/api/stats", "/api/details/:memberState", "/api/emotional"];
+    "/api/stats", "/api/details/:memberState", "/api/emotional",
+    "/api/individual/:id", "/api/group/:name"];
   res.status(200);
   res.send(`
     <code>dontspyonus.eu</code><hr/>
@@ -143,6 +144,9 @@ app.get('/api/group/:name', cors(), async (req, res) => {
   const name = decodeURIComponent(req.params.name);
   console.log(`Group API called with ${name}`);
   const data = await queryMEPs({ group: name });
+
+  if(!data.length)
+    throw new Error(`Unable to find group ${name}`);
 
   const ready = _.map(data, function (mep) {
     const o = _.omit(mep, ['_id']);
@@ -214,7 +218,77 @@ app.get('/api/emotionals', cors(), async (req, res) => {
       message: error.message
     })
   }
+});
 
+app.get('/api/list', cors(), async (req, res) => {
+  /* pick all the MEPs and return them in a CSV format,
+   * with the following fields:
+   * id, name, nation, group, party, twitter */
+  const flist = ['id', 'name', 'nation', 'group', 'party', 'twitter'];
+  try {
+    const data = await queryMEPs({});
+    const selected = _.map(data, function (mep) {
+      return _.pick(mep, flist);
+    });
+    const textual = _.reduce(selected, function (memo, mep) {
+      memo.push(_.values(mep).join(","));
+      return memo;
+    }, [ flist.join(",") ] );
+
+    console.log(`List API returning ${textual.length}`);
+    res.status(200);
+    /* set the header to make the CSV download with name 'list.csv' */
+    res.header('Content-Disposition', 'attachment; filename="list.csv"');
+    res.header('Content-Type', 'text/plain');
+    res.send(textual.join("\n"));
+  }
+  catch (error) {
+    res.status(500);
+    console.log(`Error: ${error.message}`);
+    res.json({
+      error: true,
+      message: error.message
+    });
+  }
+});
+
+app.get('/api/individual/:idList', cors(), async (req, res) => {
+  /* pick up the MEP by id and transform the data in the same
+   * format as we do for the group API */
+  try {
+    const ids = req.params.idList.split(',');
+    const data = await queryMEPs({ id: { "$in": ids } });
+    if (!data.length)
+      throw new Error(`Unable to find MEP with id ${req.params.idList}`);
+
+    const ready = _.map(data, function (mep) {
+      const o = _.omit(mep, ['_id']);
+      o.facerec = _.omit(_.first(mep.facerec), ['_id', 'id']);
+      o.facerec.expressions = _.reduce(o.facerec.expressions, function (memo, val, emo) {
+        const effective = _.round(val * 100, 1);
+        if (effective < 1)
+          return memo;
+
+        memo.push({
+          emotion: emo,
+          value: effective
+        })
+        return memo;
+      }, []);
+      return o;
+    });
+
+    console.log(`Individual API returning ${ready.length} meps`);
+    res.status(200);
+    res.json(ready);
+  } catch(error) {
+    res.status(500);
+    console.log(`Error: ${error.message}`);
+    res.json({
+      error: true,
+      message: error.message
+    });
+  }
 });
 
 app.get('/api/squared', cors(), async function (req, res) {
@@ -245,7 +319,6 @@ app.get('/api/squared', cors(), async function (req, res) {
     })
   }
 });
-
 
 app.get('/api/homepage', cors(), async function (req, res) {
   /* at the moment homepage returns random */

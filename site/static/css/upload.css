@@ -121,3 +121,35 @@
   margin: 1px;
   padding: 1px;
 }
+
+/* individual */
+.main--table {
+  width: 80%;
+    margin-left: 10%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  border-collapse: collapse;
+    border: 1px solid #ddd;
+    background: whitesmoke;
+}
+
+.group--name {
+  font-size: 11px;
+  font-family: 'Courier New', Courier, monospace;
+  word-break: break-word;
+};
+
+.party--name {
+  font-size: 10px;
+  word-break: break-word;
+}
+
+.table--data {
+  line-height: 15px;
+  max-width: 220px;
+}
+
+.mep--name {
+  font-size: 14px;
+  font-weight: 700;
+}

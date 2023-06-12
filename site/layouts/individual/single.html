@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<section class="about section mt-5">
+  <h2 class="section__title">
+    {{ .Title }}
+  </h2>
+  <span class="section__subtitle mb-1">
+    {{ .Params.subtitle }}
+  </span>
+  <br />
+  <br />
+  <div class="container grid">
+    {{ .Content }}
+  </div>
+  <hr />
+  <div class="container">
+    <div id="target"></div>
+  </div>
+</section>
+
+{{end}}

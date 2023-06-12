@@ -35,38 +35,38 @@ async function rendermeps() {
 
 }
 
-  const EUMS = {
-    'Austria': "🇦🇹",
-    'Belgium': "🇧🇪",
-    'Bulgaria': "🇧🇬",
-    'Croatia': "🇭🇷",
-    'Cyprus': "🇨🇾",
-    'Czechia': "🇨🇿",
-    'Denmark': "🇩🇰",
-    'Estonia': "🇪🇪",
-    'Finland': "🇫🇮",
-    'France': "🇫🇷",
-    'Germany': "🇩🇪",
-    'Greece': "🇬🇷",
-    'Hungary': "🇭🇺",
-    'Ireland': "🇮🇪",
-    'Italy': "🇮🇹",
-    'Latvia': "🇱🇻",
-    'Lithuania': "🇱🇹",
-    'Luxembourg': "🇱🇺",
-    'Malta': "🇲🇹",
-    'Netherlands': "🇳🇱",
-    'Poland': "🇵🇱",
-    'Portugal': "🇵🇹",
-    'Romania': "🇷🇴",
-    'Slovakia': "🇸🇰",
-    'Slovenia': "🇸🇮",
-    'Spain': "🇪🇸",
-    'Sweden': "🇸🇪"
-  };
+const EUMS = {
+  'Austria': "🇦🇹",
+  'Belgium': "🇧🇪",
+  'Bulgaria': "🇧🇬",
+  'Croatia': "🇭🇷",
+  'Cyprus': "🇨🇾",
+  'Czechia': "🇨🇿",
+  'Denmark': "🇩🇰",
+  'Estonia': "🇪🇪",
+  'Finland': "🇫🇮",
+  'France': "🇫🇷",
+  'Germany': "🇩🇪",
+  'Greece': "🇬🇷",
+  'Hungary': "🇭🇺",
+  'Ireland': "🇮🇪",
+  'Italy': "🇮🇹",
+  'Latvia': "🇱🇻",
+  'Lithuania': "🇱🇹",
+  'Luxembourg': "🇱🇺",
+  'Malta': "🇲🇹",
+  'Netherlands': "🇳🇱",
+  'Poland': "🇵🇱",
+  'Portugal': "🇵🇹",
+  'Romania': "🇷🇴",
+  'Slovakia': "🇸🇰",
+  'Slovenia': "🇸🇮",
+  'Spain': "🇪🇸",
+  'Sweden': "🇸🇪"
+};
 
 function loopOverFaces(faceStats, targetId) {
-  const htmlblob = _.map(faceStats, function(mep, n) {
+  const htmlblob = _.map(faceStats, function (mep, n) {
     /* 
     TLC: "BG"
     email: "andrey.kovatchev@europarl.europa.eu"
@@ -79,7 +79,7 @@ function loopOverFaces(faceStats, targetId) {
     twitter: "http://twitter.com/andreykovatchev"
     urlimg: "https://www.europarl.europa.eu/mepphoto/97968.jpg" */
 
-    const emotions = _.map(mep.facerec.expressions, function(inf) {
+    const emotions = _.map(mep.facerec.expressions, function (inf) {
       return `<div class="meprbi">${inf.emotion} ${inf.value}%</div>`;
     }).join('\n');
 
@@ -118,4 +118,56 @@ function loopOverFaces(faceStats, targetId) {
     return rv;
   });
   $(targetId).html(htmlblob.join('\n'));
+}
+
+function produceHTML(mepdata) {
+  console.log(mepdata);
+
+  const rv = `<div class="picture-block">
+  <table class="main--table">
+  <tr>
+
+  <td class="table--data">
+        <div class="mep--name">${EUMS[mepdata[0].nation]}<br> ${mepdata[0].name}</div>
+  </td>
+  <td class="table--data">
+        <div class="mep--name">${EUMS[mepdata[1].nation]}<br> ${mepdata[1].name}</div>
+  </td>
+  <td class="table--data">
+        <div class="mep--name">${EUMS[mepdata[2].nation]}<br> ${mepdata[2].name}</div>
+  </td> 
+  </tr>
+
+  <tr>
+  <td class="table--data">
+      <img class="contained-image" src="/MEPs/pics/${mepdata[0].id}.jpg">
+  </td>
+  <td class="table--data">
+      <img class="contained-image" src="/MEPs/pics/${mepdata[1].id}.jpg">
+  </td>
+  <td class="table--data">
+      <img class="contained-image" src="/MEPs/pics/${mepdata[2].id}.jpg">
+  </td> 
+  </tr>
+
+  <tr>
+  <td class="table--data">
+
+
+        <div class="party--name">${mepdata[0].party}</div>
+        <small class="group--name">${mepdata[0].group}</small>
+        </td>
+  <td class="table--data">
+        <div class="party--name">${mepdata[1].party}</div>
+        <small class="group--name">${mepdata[1].group}</small>
+        </td>
+  <td class="table--data">
+        <div class="party--name">${mepdata[2].party}</div>  
+        <small class="group--name">${mepdata[2].group}</small>
+        </td>
+  </tr>
+
+ </table> 
+      </div>`
+  return rv;
 }
