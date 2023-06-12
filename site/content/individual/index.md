@@ -3,7 +3,7 @@ title: 'Special page: pictures from ID'
 type: "individual"
 ---
 
-How does it works? by picking one of the ID from [this CSV](https://dontspyonus.eu/api/list), you can compose an URL like `https://dontspyonus.eu/individual#124973,124936` it would produce a picture composed by the two faces. [EXAMPLE](/individual#124973,124936,197820)
+How does it works? by picking one of the ID from [this CSV](https://dontspyonus.eu/api/list), you can compose an URL like `https://dontspyonus.eu/individual#124973,124936` it would produce a picture composed by the two faces. [EXAMPLE](/individual#124973,124936,197820). Better if you check [the full list of IDs](/post/individual/).
 
 
 <script type="text/javascript" src="/js/group.js"></script>
@@ -26,5 +26,10 @@ How does it works? by picking one of the ID from [this CSV](https://dontspyonus.
     const mep = await resp.json()
     const htmli = produceHTML(mep);
     $("#target").html(htmli);
+
+    await new Promise(resolve => setTimeout(resolve, 400));
+    createCanvas(mep[0]);
+    createCanvas(mep[1]);
+    createCanvas(mep[2]);
   }
 </script>

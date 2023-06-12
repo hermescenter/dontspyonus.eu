@@ -123,51 +123,100 @@ function loopOverFaces(faceStats, targetId) {
 function produceHTML(mepdata) {
   console.log(mepdata);
 
-  const rv = `<div class="picture-block">
+  const rv = `
   <table class="main--table">
-  <tr>
+    <tr>
+      <td class="table--data">
+        <div class="mep--name">${mepdata[0].name}</div>
+      </td>
+      <td class="table--data">
+        <div class="mep--name">${mepdata[1].name}</div>
+      </td>
+      <td class="table--data">
+        <div class="mep--name">${mepdata[2].name}</div>
+      </td> 
+    </tr>
 
-  <td class="table--data">
-        <div class="mep--name">${EUMS[mepdata[0].nation]}<br> ${mepdata[0].name}</div>
-  </td>
-  <td class="table--data">
-        <div class="mep--name">${EUMS[mepdata[1].nation]}<br> ${mepdata[1].name}</div>
-  </td>
-  <td class="table--data">
-        <div class="mep--name">${EUMS[mepdata[2].nation]}<br> ${mepdata[2].name}</div>
-  </td> 
-  </tr>
+    <tr>
+      <td class="table--data">
+        <img class="contained-image" id="mep--${mepdata[0].id}" src="/MEPs/pics/${mepdata[0].id}.jpg">
+      </td>
+      <td class="table--data">
+        <img class="contained-image" id="mep--${mepdata[1].id}" src="/MEPs/pics/${mepdata[1].id}.jpg">
+      </td>
+      <td class="table--data">
+        <img class="contained-image" id="mep--${mepdata[2].id}" src="/MEPs/pics/${mepdata[2].id}.jpg">
+      </td> 
+    </tr>
 
-  <tr>
-  <td class="table--data">
-      <img class="contained-image" src="/MEPs/pics/${mepdata[0].id}.jpg">
-  </td>
-  <td class="table--data">
-      <img class="contained-image" src="/MEPs/pics/${mepdata[1].id}.jpg">
-  </td>
-  <td class="table--data">
-      <img class="contained-image" src="/MEPs/pics/${mepdata[2].id}.jpg">
-  </td> 
-  </tr>
-
-  <tr>
-  <td class="table--data">
-
-
-        <div class="party--name">${mepdata[0].party}</div>
+    <tr>
+      <td class="table--data">
+        <div class="party--name">${EUMS[mepdata[0].nation]} ${mepdata[0].party}</div>
         <small class="group--name">${mepdata[0].group}</small>
-        </td>
-  <td class="table--data">
-        <div class="party--name">${mepdata[1].party}</div>
+      </td>
+      <td class="table--data">
+        <div class="party--name">${EUMS[mepdata[1].nation]} ${mepdata[1].party}</div>
         <small class="group--name">${mepdata[1].group}</small>
-        </td>
-  <td class="table--data">
-        <div class="party--name">${mepdata[2].party}</div>  
+      </td>
+      <td class="table--data">
+        <div class="party--name">${EUMS[mepdata[2].nation]} ${mepdata[2].party}</div>  
         <small class="group--name">${mepdata[2].group}</small>
-        </td>
-  </tr>
+      </td>
+    </tr>
+ </table>`;
 
- </table> 
-      </div>`
   return rv;
+}
+
+function createCanvas(o) {
+  const canvas = document.createElement('canvas');
+  const targetSpan = document.getElementById(`mep--${o.id}`);
+  const rectang = targetSpan.getBoundingClientRect();
+
+  canvas.width = targetSpan.width;
+  canvas.height = targetSpan.height;
+
+  /*align the canvas over the image*/
+  canvas.style.position = 'absolute';
+
+  canvas.style.top = (targetSpan.offsetTop + rectang.top) + 'px';
+  canvas.style.left = (targetSpan.offsetLeft + rectang.x - 20) + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = '#FF4747';
+  ctx.fillStyle = '#FF4747';
+
+  console.log(o.facerec);
+  const text1 = `${Math.round(100 * o.facerec.genderProbability)}% ${o.facerec.gender}`;
+  addText(text1, ctx, 0, 0);
+
+  const text2 = `${Math.round(o.facerec.age)} years`;
+  addText(text2, ctx, 0, 45);
+
+  const text3 = `${o.facerec.expression[0]} ${Math.round(100 * o.facerec.expression[1])}%`;
+  addText(text3, ctx, 0, 90);
+
+  targetSpan.parentNode.appendChild(canvas);
+}
+
+function addText(textString, ctx, x, y) {
+  // all hail to stackoverflow
+  // https://stackoverflow.com/questions/18900117/write-text-on-canvas-with-background
+  ctx.save();
+  /// draw text from top - makes life easier at the moment
+  ctx.textBaseline = 'top';
+  ctx.font = '14px sans-serif';
+  /// color for background
+  ctx.fillStyle = '#ffffffaa';
+  /// get width of text
+  const width = ctx.measureText(textString).width;
+  /// draw background rect assuming height of font
+  ctx.fillRect(x + 1, y + 1 , width + 4, 14);
+  /// text color
+  ctx.fillStyle = '#000000';
+  /// draw text on top, with a space in front
+  ctx.fillText(` ${textString}`, x, y + 2);
+  /// restore original state
+  ctx.restore();
 }
