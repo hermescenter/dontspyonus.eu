@@ -173,11 +173,11 @@ function produceHTML(mepdata) {
   </table>
   <div>
     <div class="footer--container">
-      <img class="smaller--image" src="/logo/4.png" />
+      <img class="small--logo" src="/logo/7.png" />
     </div>
     <div class="mep--name footer--container">
       <span class="colorful">
-        BAN THE FACE BIOMETRY IN THE AIAct 
+        BAN BIOMETRIC IDENTIFICATION IN THE AIAct 
       </span> 👁️ dontspyonus.eu
     </div>
   </div>
