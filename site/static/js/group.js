@@ -121,6 +121,7 @@ function loopOverFaces(faceStats, targetId) {
 }
 
 function produceHTML(mepdata) {
+  // this is the function used in the `individual` API
   console.log(mepdata);
 
   const rv = `
@@ -136,7 +137,7 @@ function produceHTML(mepdata) {
         <div class="mep--name">${mepdata[2].name}</div>
       </td> 
     </tr>
-
+    
     <tr>
       <td class="table--data">
         <img class="contained-image" id="mep--${mepdata[0].id}" src="/MEPs/pics/${mepdata[0].id}.jpg">
@@ -151,19 +152,36 @@ function produceHTML(mepdata) {
 
     <tr>
       <td class="table--data">
+        <br /> 
         <div class="party--name">${EUMS[mepdata[0].nation]} ${mepdata[0].party}</div>
+        <small><br></small>
         <small class="group--name">${mepdata[0].group}</small>
       </td>
       <td class="table--data">
+        <br /> 
         <div class="party--name">${EUMS[mepdata[1].nation]} ${mepdata[1].party}</div>
+        <small><br></small>
         <small class="group--name">${mepdata[1].group}</small>
       </td>
       <td class="table--data">
+        <br /> 
         <div class="party--name">${EUMS[mepdata[2].nation]} ${mepdata[2].party}</div>  
+        <small><br></small>
         <small class="group--name">${mepdata[2].group}</small>
       </td>
     </tr>
- </table>`;
+  </table>
+  <div>
+    <div class="footer--container">
+      <img class="smaller--image" src="/logo/4.png" />
+    </div>
+    <div class="mep--name footer--container">
+      <span class="colorful">
+        BAN THE FACE BIOMETRY IN THE AIAct 
+      </span> 👁️ dontspyonus.eu
+    </div>
+  </div>
+  `;
 
   return rv;
 }

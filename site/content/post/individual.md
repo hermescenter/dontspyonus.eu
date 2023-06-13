@@ -4,10 +4,10 @@ date: "2023-06-12"
 description: "To help the campaign this is an attempt of producing usable pictures"
 ---
 
-[Test here](/individual/#124973,124936,197820), format is `/indiviual#ID1,ID2,ID3`
+### [Test here](/individual/#124973,124936,197820), the format is `/indiviual#ID1,ID2,ID3`.
 
-# The list, in CSV equivalent
 
+## List, in [CSV equivalent](/api/list)
 
 ```
 id,name,nation,group,party,twitter
