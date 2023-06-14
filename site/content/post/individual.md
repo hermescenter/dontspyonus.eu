@@ -1,5 +1,5 @@
 ---
-title: "Here's how to generate the MEP's image as seen through the lens of a RBI camera."
+title: "Here's how to generate the MEP's image as seen through the lens of a biometric surveillance camera."
 date: "2023-06-12"
 description: "To help the campaign this is an attempt of producing usable pictures"
 ---

@@ -3,8 +3,7 @@ title: 'Special page: pictures from ID'
 type: "individual"
 ---
 
-How does it works? by picking one of the ID from [this CSV](https://dontspyonus.eu/api/list), you can compose an URL like `https://dontspyonus.eu/individual#124973,124936` it would produce a picture composed by the two faces. [EXAMPLE](/individual#124973,124936,197820). Better if you check [the full list of IDs](/post/individual/).
-
+# Read [How does it works](/post/individual).
 
 <script type="text/javascript" src="/js/group.js"></script>
 
