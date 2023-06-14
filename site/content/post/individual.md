@@ -1,13 +1,27 @@
 ---
-title: "Individual (well, triplets) combo pictures"
+title: "Here's how to generate the MEP's image as seen through the lens of a RBI camera."
 date: "2023-06-12"
 description: "To help the campaign this is an attempt of producing usable pictures"
 ---
 
-### [Test here](/individual/#124973,124936,197820), the format is `/indiviual#ID1,ID2,ID3`.
+## 1. open [this CSV file](/api/list) and find the ID number that matches the MEP's name and last name. You **must choose 3 IDs**.
 
+<br>
 
-## List, in [CSV equivalent](/api/list)
+## 2. insert the 3 IDs in the following URL: `https://dontspyonus.eu/individual/#28229,96796,124780`. Please note that the URL format must be `/individual#ID1,ID2,ID3`.
+
+<br>
+
+## 3. run the webpage and... enjoy your MEPs under simulated surveillance! 
+
+<br>
+
+## 4. Take a screenshot, tweet the image you've generated and tag 'em! Don't forget the hashtag <a target=_blank href="https://twitter.com/search?q=%23dontspyeu&src=typed_query&f=live">#DontSpyEU</a> and possibly <a href="https://twitter.com/HermesCenter" target=_blank>@HermesCenter</a> (Twitter). Please share on your social media.
+
+<br>
+<br>
+
+The contents of the csv are pasted here for your courtesy
 
 ```
 id,name,nation,group,party,twitter
