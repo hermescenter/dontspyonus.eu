@@ -3,6 +3,10 @@ title: "Don't Spy EU"
 description: 'We want to ensure nobody can use face surveillance technolgies in public spaces'
 ---
 
+# 14 of June 2023: It's VOTE day for the European Parlament, tweet their faces:
+
+[![](/images/twittable.png)](https://dontspyonus.eu/individual/#96796,197820,28615)
+
 # Will the European Parliament ban **face surveillance technologies** used **by police and private companies** in public spaces?
 
 <div id="facelist-0" class="container img__limit"></div>
