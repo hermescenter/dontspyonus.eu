@@ -3,7 +3,13 @@ title: "Don't Spy EU"
 description: 'We want to ensure nobody can use face surveillance technolgies in public spaces'
 ---
 
-# 14 of June 2023: It's VOTE day for the European Parlament, tweet their faces:
+# European Parlament Vote Done!
+
+[![](/images/EllaJakubowska_on_Twitter.png)](https://twitter.com/ellajakubowska1/status/1668931912855871488)
+
+### This website would be updated to face the next phase; At the moment the contest are suspended, and the target would be refocus.
+
+# Act VOTE day: everyone has the right to be protected by invasive surveillance technology. Here's how to test RBI algorithms on MEPs
 
 [![](/images/twittable.png)](https://dontspyonus.eu/individual/#96796,197820,28615)
 
