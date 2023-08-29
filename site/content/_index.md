@@ -3,6 +3,9 @@ title: "Don't Spy EU"
 description: 'We want to ensure nobody can use face surveillance technolgies in public spaces'
 ---
 
+<h1><strong style="text-align:center">Summer 2023, for the next trilogue phase we're working on a new version of the website, targeting all the Council of Europe!</strong></h1>
+
+
 # European Parlament Vote Done!
 
 [![](/images/EllaJakubowska_on_Twitter.png)](https://twitter.com/ellajakubowska1/status/1668931912855871488)
