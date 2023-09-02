@@ -34,7 +34,7 @@ description: "You can donate to sustain the prizes, or spread the message. Make 
 
 ---
 
-# `3` Consider suggest changes, discuss improvement, stunt, or maintain this website. The face recognition tool, some of the data, and all the website is all in our [repository](https://github.com/hermescenter/dontspy.eu).
+# `3` Consider suggest changes, discuss improvement, stunt, or maintain this website. The face recognition tool, some of the data, and all the website is all in our [repository](https://github.com/hermescenter/dontspyonus.eu).
 
 ---
 

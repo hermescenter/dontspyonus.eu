@@ -78,7 +78,7 @@ description: "We're part of the Reclaim Your Face coalition that works to lobby 
       </h2>
     </td>
     <td>
-     <a href="https://github.com/hermescenter/dontspy.eu">
+     <a href="https://github.com/hermescenter/dontspyonus.eu">
       <img style="height:24px" src="/images/github-icon.png" />
     </a>
     </td>
