@@ -115,6 +115,7 @@ body{
     font-size: var(--normal-font-size);
     background-color: /* var(--body-color); */ var(--background);
     color: var(--text-color);
+    max-width: 100%;
 }
 h1,h2,h3,h4{
     color: var(--title-color);
@@ -195,6 +196,7 @@ h1 > a:visited, h2 > a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8em;
 }
 .nav__logo_link {
     height: 100%;
@@ -363,6 +365,7 @@ h2 {
 }
 
 .home__container {
+   max-width: 100%;
     h1 {
         font-size: var(--big-font-size);
         letter-spacing: 1px;
@@ -374,6 +377,7 @@ h2 {
         }
     }
 }
+
 .home__subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-color);
@@ -591,6 +595,11 @@ h2 {
         justify-items: center;
     }
 }
+
+img {
+ width: 100% !important;
+}
+
 /* For medium devices */
 @media screen and (min-width:568px){
     .home__content{
