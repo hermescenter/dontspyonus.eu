@@ -7,8 +7,7 @@ description: 'We want to ensure nobody can use face surveillance technolgies in 
 
 <br/>
 <br/>
-
----
+<hr>
 
 
 # European Parlament Vote Done!
