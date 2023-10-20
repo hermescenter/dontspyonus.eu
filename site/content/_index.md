@@ -3,8 +3,10 @@ title: "Don't Spy EU"
 description: 'We want to ensure nobody can use face surveillance technolgies in public spaces'
 ---
 
-<h1><strong style="text-align:center">Summer 2023, for the last trilogue phase we built a <a href="https://dontspy.eu">new campaign! targeting the Council of Europe</a></strong></h1>
+<h1 style="text-align:center"><strong>Summer 2023, for the last trilogue phase we built a <a href="https://dontspy.eu">new campaign! targeting the Council of Europe</a>.</strong></h1>
 
+<br/>
+<br/>
 ---
 
 
